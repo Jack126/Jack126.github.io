@@ -1,0 +1,23 @@
+entries:
+  - title: About
+    entries:
+      - title: So lazy and nothing.
+      - title: github repo
+        url: https://Jack126.github.io
+
+  - title: all posts
+    post_list:
+      limit: 6
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
+
+  - title: posts by category
+    post_list:
+      category: language
+      show_more: true
+      show_more_text: See more posts...
+      show_more_url: archive.html
+
+  - title: rss
+    url: feed.xml
