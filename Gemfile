@@ -1,2 +1,6 @@
-source "https://Jack126.github.io"
+source "https://rubygems.org"
+
 gem "no-style-please"
+gem "kramdown-parser-gfm"
+
+gem "webrick", "~> 1.8"

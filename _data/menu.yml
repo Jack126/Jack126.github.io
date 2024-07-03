@@ -1,38 +1,23 @@
-# For documentation on this file, see:
-# https://github.com/riggraz/no-style-please#customize-the-menu
-
 entries:
-  - title: info
+  - title: About
     entries:
-      - title: a (nearly) no-CSS, fast, minimalist Jekyll theme.
+      - title: So lazy and nothing.
       - title: github repo
-        url: https://github.com/riggraz/no-style-please
-      - title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
+        url: https://Jack126.github.io
 
   - title: all posts
     post_list:
-      limit: 5
+      limit: 6
       show_more: true
       show_more_text: See archive...
       show_more_url: archive.html
 
   - title: posts by category
     post_list:
-      category: example2
+      category: language
       show_more: true
       show_more_text: See more posts...
-      show_more_url: example2-archive.html
+      show_more_url: archive.html
 
   - title: rss
     url: feed.xml
-  
-  - title: another list
-    entries:
-      - title: with subitems
-        entries:
-          - title: with subsubitems
-          - title: example page
-            url: about
-  - title: PRO TIP
-    entries:
-      - title: to edit this menu, edit _data/menu.yml file

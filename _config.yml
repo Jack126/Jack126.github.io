@@ -1,4 +1,23 @@
-url: //Jack126.github.io
-remote_theme: pages-themes/minimal@v0.2.0
+title: 生活就是一场修行
+email: jack92_liang@163.com
+description: >- # this means to ignore newlines until "baseurl:"
+  生活就是一场修行.
+url: "https://Jack126.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+# Build settings
+markdown: kramdown
+theme: no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description in home page
+
+sass:
+  style: :compressed
+
 plugins:
-- jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
