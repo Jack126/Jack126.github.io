@@ -1,16 +1,4 @@
 url: //Jack126.github.io
-baseurl: "/no-style-please" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
-permalink: /:slug.html
-theme: no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
-theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
-  back_home_text: ".." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: false # show blog description in home page
-
-sass:
-  style: :compressed
-
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+- jekyll-remote-theme
