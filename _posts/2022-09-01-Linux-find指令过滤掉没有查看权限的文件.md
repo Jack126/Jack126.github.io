@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Linux find指令过滤掉没有查看权限的文件"
-category: linux
-tags: linux
+category: Linux
+tags: Linux
 ---
 
 

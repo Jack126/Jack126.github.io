@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Debugger entered--lisp error void-function"
-category: emacs
+category: Language
 tags: emacs
 ---
 

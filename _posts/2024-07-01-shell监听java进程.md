@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "shell 监听java 进程"
-category: language
+category: Language
 tags: shell
 ---
 

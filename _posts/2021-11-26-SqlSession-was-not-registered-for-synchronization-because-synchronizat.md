@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SqlSession was not registered for synchronization because synchronization is not active事务开启失败"
-category: JAVA
+category: Language
 tags: JAVA
 ---
 

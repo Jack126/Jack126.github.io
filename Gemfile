@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll-theme-minimal"
+gem "no-style-please"
 gem "kramdown-parser-gfm"
 gem "jekyll-feed"
 

@@ -37,9 +37,6 @@ GEM
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
       jekyll (>= 3.8, < 5.0)
-    jekyll-theme-minimal (0.2.0)
-      jekyll (> 3.5, < 5.0)
-      jekyll-seo-tag (~> 2.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -51,6 +48,10 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    no-style-please (0.1.0)
+      jekyll (~> 4.1)
+      jekyll-feed (~> 0.14)
+      jekyll-seo-tag (~> 2.6)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.0)
@@ -74,8 +75,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll-feed
-  jekyll-theme-minimal
   kramdown-parser-gfm
+  no-style-please
   webrick (~> 1.8)
 
 BUNDLED WITH

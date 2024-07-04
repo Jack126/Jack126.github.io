@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "python-black 2 格式化代码"
-category: emacs
+category: Language
 tags: emacs
 ---
 

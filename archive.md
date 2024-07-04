@@ -1,4 +1,4 @@
 ---
 layout: archive
-title: Archive
+title: 所有文章
 ---
