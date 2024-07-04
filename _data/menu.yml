@@ -5,7 +5,10 @@ entries:
       - title: github repo
         url: https://Jack126.github.io
 
-  - title: all posts
+  - title: TAGS
+    url: tags
+
+  - title: 最近更新
     post_list:
       limit: 15
       show_more: true
@@ -22,5 +25,3 @@ entries:
   - title: RSS
     url: feed.xml
     
-  - title: TAGS
-    url: tags
