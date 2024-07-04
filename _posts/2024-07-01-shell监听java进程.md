@@ -2,6 +2,7 @@
 layout: post
 title: "shell 监听java 进程"
 category: language
+tags: shell
 ---
 
 shell 监听Java应用服务进程是否正常运行，并重启

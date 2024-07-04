@@ -1,5 +1,5 @@
 entries:
-  - title: About
+  - title: 关于
     entries:
       - title: 生活就是一场修行.
       - title: github repo
@@ -12,12 +12,15 @@ entries:
       show_more_text: See archive...
       show_more_url: archive.html
 
-  - title: posts by category
-    post_list:
-      category: language
-      show_more: true
-      show_more_text: See more posts...
-      show_more_url: archive.html
+  # - title: posts by category
+  #   post_list:
+  #     category: language
+  #     show_more: true
+  #     show_more_text: See more posts...
+  #     show_more_url: archive.html
 
-  - title: rss
+  - title: RSS
     url: feed.xml
+    
+  - title: TAGS
+    url: tags

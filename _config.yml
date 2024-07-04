@@ -9,6 +9,7 @@ url: "https://Jack126.github.io" # the base hostname & protocol for your site, e
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-minimal # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
+# remote_theme: no-style-please
 
 theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"

@@ -35,7 +35,7 @@ body {
 
 .post-meta { text-align: right; }
 
-h2, h3, h4, h5, h6 { margin-top: 3rem; }
+h2, h3, h4, h5, h6 { margin-top: 1rem; }
 
 hr { margin: 2rem 0; }
 
@@ -92,3 +92,30 @@ img {
   display: block;
   margin: 0 auto;
 }
+// for tag cloud and archives
+.tag-cloud {
+    list-style: none;
+    padding: 0;
+    text-align: justify; 
+    font-size: 16px;
+    li {
+      display: inline-block;
+      margin: 0 5px 5px 0; 
+    }
+  }
+  #archives {
+    padding: 5px;
+  }
+  .archive-group {
+    margin: 5px;
+    border-top: 1px solid #ddd;
+  }
+  .archive-item {
+    margin-left: 5px;
+  }
+  .archive-item span{
+    margin-right: 5px;
+  }
+  .post_tags {
+    text-align: right;
+  }
