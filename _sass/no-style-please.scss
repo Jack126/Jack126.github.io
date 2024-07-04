@@ -24,7 +24,6 @@ html, body { background: white; }
 html { height: 100%; }
 
 body {
-  color: black;
   font-family: monospace;
   font-size: 16px;
   line-height: 1.4;
@@ -46,7 +45,7 @@ li { margin: 0.4rem 0; }
 *:target { background: yellow; }
 
 .w {
-  max-width: 640px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -54,11 +53,15 @@ li { margin: 0.4rem 0; }
 hr {
   text-align: center;
   border: 0;
-
   &:before { content: '/////' }
   &:after { content: attr(data-content) '/////' }
 }
-
+.fr{
+    float:right;    
+}
+a{
+  text-decoration: none;
+}
 table { width: 100%; }
 
 table, th, td {
@@ -83,7 +86,6 @@ blockquote {
   font-style: italic;
   border: thin solid black;
   padding: 1rem;
-
   p { margin: 0; }
 }
 
@@ -99,23 +101,23 @@ img {
     text-align: justify; 
     font-size: 16px;
     li {
-      display: inline-block;
-      margin: 0 5px 5px 0; 
+        display: inline-block;
+        margin: 0 5px 5px 0; 
     }
-  }
-  #archives {
-    padding: 5px;
-  }
-  .archive-group {
-    margin: 5px;
-    border-top: 1px solid #ddd;
-  }
-  .archive-item {
-    margin-left: 5px;
-  }
-  .archive-item span{
-    margin-right: 5px;
-  }
-  .post_tags {
-    text-align: right;
-  }
+}
+#archives {
+padding: 5px;
+}
+.archive-group {
+margin: 5px;
+border-top: 1px solid #ddd;
+}
+.archive-item {
+margin-left: 5px;
+}
+.archive-item span{
+margin-right: 5px;
+}
+.post_tags {
+text-align: right;
+}
