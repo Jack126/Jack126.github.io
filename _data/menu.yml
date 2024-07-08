@@ -1,23 +1,22 @@
 entries:
-  - title: 关于
+  - title: Link
     entries:
-      - title: 活着就是一场修行.
-      - title: github
+      - title: Github
         url: https://github.com/Jack126
+      - title: RSS
+        url: feed.xml
 
-  - title: TAGS
+  - title: Tags
     url: tags.html
 
-  - title: 分类
+  - title: Categories
     url: categories.html
 
-  - title: 最近更新
+  - title: Recent
     post_list:
       limit: 10
       show_more: true
-      show_more_text: 查看更多
+      show_more_text: See more posts...
       show_more_url: archive.html
 
-  - title: RSS
-    url: feed.xml
     

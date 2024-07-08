@@ -1,4 +1,4 @@
 ---
 layout: archive
-title: 所有文章
+title: All posts
 ---

@@ -94,30 +94,3 @@ img {
   display: block;
   margin: 0 auto;
 }
-// for tag cloud and archives
-.tag-cloud {
-    list-style: none;
-    padding: 0;
-    text-align: justify; 
-    font-size: 16px;
-    li {
-        display: inline-block;
-        margin: 0 5px 5px 0; 
-    }
-}
-#archives {
-padding: 5px;
-}
-.archive-group {
-margin: 5px;
-border-top: 1px solid #ddd;
-}
-.archive-item {
-margin-left: 5px;
-}
-.archive-item span{
-margin-right: 5px;
-}
-.post_tags {
-text-align: right;
-}
