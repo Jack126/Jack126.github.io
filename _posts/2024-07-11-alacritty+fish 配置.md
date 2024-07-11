@@ -1,0 +1,244 @@
+---
+layout: post
+title: "alacritty+fish 配置"
+category: 编辑器
+tags: alacritty fish
+---
+
+
+### 贴一下个人目前在用终端环境
+
+用了一段时间iTerm2 偶尔发现alacritty，顿时心喜，换之。目前除了不能设置背景图是个遗憾外，其他还好。
+
+
+#### alacritty
+
+```
+live_config_reload=true
+[env]
+term = "xterm-256color"
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+[window]
+dynamic_title = true
+opacity = 1
+dimensions = { columns = 120, lines = 40}
+padding = { x = 0, y = 1}
+option_as_alt="both" # macos  Make Option key behave as Alt
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
+bold_italic = { family = "Hack Nerd Font", style = "Bold Italic" }
+size = 15
+
+[cursor]
+style = { shape = "Block", blinking = "On"}
+
+[selection]
+save_to_clipboard = true
+
+[shell]
+program = "/opt/local/bin/fish" # 关联fish设置，默认为 zsh或其他sh
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+# Mariana
+
+# Default colors
+[colors.primary]
+background = '#343d46'
+foreground = '#d8dee9'
+
+# Cursor colors
+[colors.cursor]
+cursor = '#fcbb6a'
+text = '#ffffff'
+
+# Normal colors
+[colors.normal]
+black = '#000000'
+blue = '#6699cc'
+cyan = '#5fb4b4'
+green = '#99c794'
+magenta = '#c695c6'
+red = '#ec5f66'
+white = '#f7f7f7'
+yellow = '#f9ae58'
+
+# Bright colors
+[colors.bright]
+black = '#689d6a'
+blue = '#85add6'
+cyan = '#82c4c4'
+green = '#acd1a8'
+magenta = '#d8b6d8'
+red = '#f97b58'
+white = '#ffffff'
+yellow = '#fac761'
+
+# Selection colors
+[colors.selection]
+background = '#4e5a65'
+text = '#d8dee9'
+
+
+```
+
+#### fish
+
+用了很长一段时间zsh，搭配oh-my-zsh用也不错，还是感觉臃肿，发现了fish，换之。目前使用良好
+
+```
+set pure_symbol_prompt "\$"
+set pure_color_virtualenv "magenta"
+set pure_show_jobs true
+set pure_color_jobs "blue"
+set pure_show_system_time false
+
+# Async prompt
+set -g async_prompt_functions _pure_prompt_git
+
+# Basic environments
+set -x SHELL fish
+set -x TERM screen-256color
+set -x EDITOR nvim
+set -x LANG en_US.UTF-8
+set -x LC_ALL en_US.UTF-8
+
+#clashx
+#set -x http_proxy http://127.0.0.1:7890
+#set -x  https_proxy http://127.0.0.1:7890
+
+# Go
+set -x GOPATH $HOME/go
+# set -x GO111MODULE on
+
+set -x NODE_PACKAGE_HOME $HOME/.npm
+
+# for NODE_PACKAGE in $NODE_PACKAGE_HOME/*; do
+#     NODE_PACKAGE_BIN=$NODE_PACKAGE/node_modules/.bin
+#     if [[ -d $NODE_PACKAGE_BIN ]]
+#     then
+# 	PATH=$PATH:$NODE_PACKAGE_BIN
+#     fi
+# done
+
+# $PATH environment variables
+set -e fish_user_paths
+set -gx fish_user_paths \
+    $HOME/.pyenv/shims \
+    $GOPATH/bin \
+    $HOME/.cargo/bin \
+    $HOME/.dotnet/tools \
+    /usr/local/lib/ruby/gems/3.0.0/bin \
+    /usr/local/opt/ruby/bin \
+    /usr/local/opt/llvm/bin \
+    /usr/local/sbin \
+    /usr/local/bin \
+    /sbin \
+    /bin \
+    /usr/local/go/bin \
+    /usr/local/opt/sqlite/bin \
+    /usr/local/opt/icu4c/bin \
+    /usr/local/opt/icu4c/sbin \
+    /usr/local/clamav/bin:/usr/local/clamav/sbin \
+    /usr/local/opt/libiconv/bin \
+    /opt/local/bin \
+    /usr/sbin \
+    $HOME/.local/bin \
+    /usr/bin \
+    $fish_user_paths
+
+# Config files directory.
+set -x XDG_CONFIG_HOME $HOME/.config
+
+# homebrew
+# disable auto updates.
+set -x HOMEBREW_NO_AUTO_UPDATE 1
+
+# https://github.com/junegunn/fzf
+set -x FZF_DEFAULT_COMMAND 'fd --type f --exclude .git'
+
+
+# Rewrite function fish_user_key_bindings
+if functions -q fish_user_key_bindings
+    if not functions -q _old_fish_user_key_bindings
+        functions -c fish_user_key_bindings _old_fish_user_key_bindings
+    end
+end
+
+function fish_user_key_bindings
+    if functions -q _old_fish_user_key_bindings
+        _old_fish_user_key_bindings
+    end
+    # Ctrl-X to edit command buffer with $EDITOR
+    bind \cx edit_command_buffer
+end
+
+# fish dotenv function.
+# Execute `dotenv` will load environment variables from file `.env`.
+function dotenv --description 'Load environment variables from .env file'
+    set -l envfile ".env"
+
+    if [ (count $argv) -gt 0 ]
+        set envfile $argv[1]
+    end
+
+    if test -e $envfile
+        # If envfile exists, set env variables one by one.
+        for line in (cat $envfile | grep -e '[^[:space:]]' | grep -v '^#')
+            set -xg (echo $line | cut -d = -f 1) (echo $line | cut -d = -f 2-)
+        end
+
+        set -xg __DOTENV_ACTIVATE 1
+
+        # Rewrite _pure_prompt function
+        if not functions -q _old_pure_prompt
+            functions -c _pure_prompt _old_pure_prompt
+        end
+
+        # Insert dotenv prefix to prompt
+        function _pure_prompt  --inherit-variable envfile --argument-names exit_code
+            if set -q __DOTENV_ACTIVATE 
+                echo -n -s (set_color green) "(" $envfile ")" (set_color normal) " "
+            end
+            _old_pure_prompt $exit_code
+        end
+    end
+end
+
+function dotenv-erase --description 'Erase environment variables from given file'
+    set -l envfile ".env"
+
+    if [ (count $argv) -gt 0 ]
+        set envfile $argv[1]
+    end
+
+    if test -e $envfile
+        # If envfile exists, set env variables one by one.
+        for line in (cat $envfile | grep -e '[^[:space:]]' | grep -v '^#')
+            set --erase (echo $line | cut -d = -f 1)
+        end
+    end
+
+    set --erase __DOTENV_ACTIVATE
+end
+
+```
+
+***PS***
+
+fish的 set -X 需要注意，跟zsh不一样，等同于 export
+
+
+***fish 插件*** 
+
+```
+jorgebucaran/fisher
+jethrokuan/z
+pure-fish/pure
+
+```
