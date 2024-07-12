@@ -1,7 +1,7 @@
 
 title: 大雨庄周
 email: jack92_liang@163.com
-description: 活着就是一场修行.
+description: 活着就是一场修行。
 url: "https://Jack126.github.io"
 
 markdown: kramdown
@@ -9,7 +9,7 @@ remote_theme: riggraz/no-style-please # if you are using GitHub Pages, change it
 #theme: no-style-please
 
 theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
+  appearance: "light" # can be "light", "dark" or "auto"
   back_home_text: "<<<" # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: true # show blog description in home page
