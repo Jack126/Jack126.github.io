@@ -3,7 +3,7 @@ layout: post
 title: "SqlSession was not registered for synchronization because synchronization is not active事务开启失败"
 category: Language
 tags: JAVA
-date: 2021-11-26 11:00
+date: 2021-11-26 12:00
 ---
 
 学习ssm初始阶段，遇到一个mybatis-config 打印logImpl 报错问题，如下：

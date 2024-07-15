@@ -3,7 +3,7 @@ layout: post
 title: "Debugger entered--lisp error void-function"
 category: Language
 tags: emacs
-date: 2021-10-26 11:00
+date: 2021-10-26 12:00
 ---
 
 
