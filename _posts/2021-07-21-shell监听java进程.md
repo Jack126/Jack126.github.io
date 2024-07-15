@@ -3,6 +3,7 @@ layout: post
 title: "shell 监听java 进程"
 category: Language
 tags: shell
+date: 2021-07-21 11:00
 ---
 
 shell 监听Java应用服务进程是否正常运行，并重启

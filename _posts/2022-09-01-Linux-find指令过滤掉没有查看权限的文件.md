@@ -3,6 +3,7 @@ layout: post
 title: "Linux find指令过滤掉没有查看权限的文件"
 category: Linux
 tags: Linux
+date: 2022-09-01 11:00
 ---
 
 
