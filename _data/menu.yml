@@ -3,7 +3,7 @@ entries:
     entries:
       - title: Github
         url: https://github.com/Jack126
-      - title: RSS
+      - title: Feed
         url: feed.xml
 
   - title: Tags
@@ -18,5 +18,3 @@ entries:
       show_more: true
       show_more_text: See more posts...
       show_more_url: archive.html
-
-    
