@@ -155,6 +155,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot --boot-directory=/boot --
 * **CRUX 无 initramfs → `CONFIG_DRM=y` 与 `CONFIG_DRM_VMWGFX=y` 必须都 `<*>` 内置**
 * 依赖项为 `<M>` 时被依赖项无法设为 `<*>`（依赖是模块则被依赖只能模块），需先改 DRM 为 `<*>`
 * 直接改 `.config` 方式（配合 olddefconfig）：
+
 ```
 cd 内核源码目录
 sed -i 's/CONFIG_DRM=m/CONFIG_DRM=y/' .config

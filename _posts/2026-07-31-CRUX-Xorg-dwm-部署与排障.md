@@ -225,6 +225,7 @@ pkgadd ./libev#4.33-1.pkg.tar.gz
 * 卸载：`pkgrm libev`（不需要路径）
 
 > 教训：`pkgmk -h` 帮助清单里没有 `-n`（曾有错误建议 `pkgmk -n` 关闭签名，实际无效）；正确忽略签名参数是 `-is`。离线场景统一流程：`pkgmk -is`（或先 `pkgmk -us` 刷新签名）→ `pkgadd ./包名#版本-1.pkg.tar.gz`。
+
 > 教训2： libev没啥用，与dwm无关。
 
 ### dwm / dmenu 配置
