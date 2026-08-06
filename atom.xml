@@ -85,6 +85,24 @@
     <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
     <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
     <category term="CRUX" scheme="https://jack126.github.io/tags/CRUX/"/>
+    <category term="内核" scheme="https://jack126.github.io/tags/%E5%86%85%E6%A0%B8/"/>
+    <category term="编译" scheme="https://jack126.github.io/tags/%E7%BC%96%E8%AF%91/"/>
+    <id>https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/</id>
+    <link href="https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/"/>
+    <published>2026-07-31T04:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>CRUX Linux 3.8（默认内核 6.12.23）升级内核到 7.0.14，在 VMware 虚拟机环境遇到依赖安装、内核编译配置、G]]>
+    </summary>
+    <title>CRUX Linux 内核升级完整教程</title>
+    <updated>2026-08-05T08:13:19.556Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="CRUX" scheme="https://jack126.github.io/tags/CRUX/"/>
     <category term="Xorg" scheme="https://jack126.github.io/tags/Xorg/"/>
     <category term="dwm" scheme="https://jack126.github.io/tags/dwm/"/>
     <category term="vxwm" scheme="https://jack126.github.io/tags/vxwm/"/>
@@ -96,24 +114,6 @@
     </summary>
     <title>CRUX Xorg dwm 部署与排障</title>
     <updated>2026-08-05T08:13:19.560Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Jack</name>
-    </author>
-    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
-    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
-    <category term="CRUX" scheme="https://jack126.github.io/tags/CRUX/"/>
-    <category term="内核" scheme="https://jack126.github.io/tags/%E5%86%85%E6%A0%B8/"/>
-    <category term="编译" scheme="https://jack126.github.io/tags/%E7%BC%96%E8%AF%91/"/>
-    <id>https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/</id>
-    <link href="https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/"/>
-    <published>2026-07-31T04:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>CRUX Linux 3.8（默认内核 6.12.23）升级内核到 7.0.14，在 VMware 虚拟机环境遇到依赖安装、内核编译配置、G]]>
-    </summary>
-    <title>CRUX Linux 内核升级完整教程</title>
-    <updated>2026-08-05T08:13:19.556Z</updated>
   </entry>
   <entry>
     <author>
@@ -257,21 +257,6 @@
     <author>
       <name>Jack</name>
     </author>
-    <category term="数据库" scheme="https://jack126.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    <category term="MySQL" scheme="https://jack126.github.io/tags/MySQL/"/>
-    <id>https://jack126.github.io/2024/11/07/2024-11-07-MySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</id>
-    <link href="https://jack126.github.io/2024/11/07/2024-11-07-MySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
-    <published>2024-11-07T01:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h3 id="最近本地修改mysql端口号遇到一个问题，记录一下。"><a href="#最近本地修改mysql端口号遇到一个问题，记录一下。" class="headerlink" title="最近本地修改mysql端口号遇到一个问题，记录一下。"></a>最近本地修改my]]>
-    </summary>
-    <title>MySQL常见问题汇总</title>
-    <updated>2026-08-05T08:13:19.516Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Jack</name>
-    </author>
     <category term="天马行空" scheme="https://jack126.github.io/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/"/>
     <category term="macports" scheme="https://jack126.github.io/tags/macports/"/>
     <id>https://jack126.github.io/2024/11/07/2024-11-07-Macports%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
@@ -282,6 +267,21 @@
     </summary>
     <title>Macports常用操作</title>
     <updated>2026-08-05T08:13:19.512Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="数据库" scheme="https://jack126.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="MySQL" scheme="https://jack126.github.io/tags/MySQL/"/>
+    <id>https://jack126.github.io/2024/11/07/2024-11-07-MySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</id>
+    <link href="https://jack126.github.io/2024/11/07/2024-11-07-MySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    <published>2024-11-07T01:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="最近本地修改mysql端口号遇到一个问题，记录一下。"><a href="#最近本地修改mysql端口号遇到一个问题，记录一下。" class="headerlink" title="最近本地修改mysql端口号遇到一个问题，记录一下。"></a>最近本地修改my]]>
+    </summary>
+    <title>MySQL常见问题汇总</title>
+    <updated>2026-08-05T08:13:19.516Z</updated>
   </entry>
   <entry>
     <author>
