@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Jack</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://jack126.github.io/</id>
+  <link href="https://jack126.github.io/" rel="alternate"/>
+  <link href="https://jack126.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Jack</rights>
+  <subtitle>活着就是一场修行。</subtitle>
+  <title>东临碣石</title>
+  <updated>2026-08-06T00:56:27.603Z</updated>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="i3" scheme="https://jack126.github.io/tags/i3/"/>
+    <category term="i3blocks" scheme="https://jack126.github.io/tags/i3blocks/"/>
+    <id>https://jack126.github.io/2026/08/03/2026-08-03-i3%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://jack126.github.io/2026/08/03/2026-08-03-i3%E9%85%8D%E7%BD%AE/"/>
+    <published>2026-08-03T02:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="组件与安装"><a href="#组件与安装" class="headerlink" title="组件与安装"></a>组件与安装</h3><table>
+<thead>
+<tr>
+<th>组件</th>
+<th>来源</th>
+<th>配置</th>
+</tr]]>
+    </summary>
+    <title>i3 配置</title>
+    <updated>2026-08-06T00:56:27.603Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="JWM" scheme="https://jack126.github.io/tags/JWM/"/>
+    <id>https://jack126.github.io/2026/08/03/2026-08-03-JWM%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://jack126.github.io/2026/08/03/2026-08-03-JWM%E9%85%8D%E7%BD%AE/"/>
+    <published>2026-08-03T01:30:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="组件与安装"><a href="#组件与安装" class="headerlink" title="组件与安装"></a>组件与安装</h3><table>
+<thead>
+<tr>
+<th>组件</th>
+<th>来源</th>
+<th>说明</th>
+</tr]]>
+    </summary>
+    <title>JWM 配置</title>
+    <updated>2026-08-06T00:56:28.590Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="dwm" scheme="https://jack126.github.io/tags/dwm/"/>
+    <category term="suckless" scheme="https://jack126.github.io/tags/suckless/"/>
+    <id>https://jack126.github.io/2026/08/03/2026-08-03-dwm%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%BE%8E%E5%8C%96/</id>
+    <link href="https://jack126.github.io/2026/08/03/2026-08-03-dwm%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%BE%8E%E5%8C%96/"/>
+    <published>2026-08-03T01:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="组件与安装"><a href="#组件与安装" class="headerlink" title="组件与安装"></a>组件与安装</h3><table>
+<thead>
+<tr>
+<th>组件</th>
+<th>Git 地址</th>
+<th>本地源码</th]]>
+    </summary>
+    <title>dwm 配置与美化</title>
+    <updated>2026-08-05T08:13:19.568Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="CRUX" scheme="https://jack126.github.io/tags/CRUX/"/>
+    <category term="Xorg" scheme="https://jack126.github.io/tags/Xorg/"/>
+    <category term="dwm" scheme="https://jack126.github.io/tags/dwm/"/>
+    <category term="vxwm" scheme="https://jack126.github.io/tags/vxwm/"/>
+    <id>https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Xorg-dwm-%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%8E%92%E9%9A%9C/</id>
+    <link href="https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Xorg-dwm-%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%8E%92%E9%9A%9C/"/>
+    <published>2026-07-31T04:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>CRUX Linux 3.8 虚拟机环境，从零编译 Xorg → 搭建 dwm&#x2F;dmenu。完整实战记录，含 vxwm 尝试失败结]]>
+    </summary>
+    <title>CRUX Xorg dwm 部署与排障</title>
+    <updated>2026-08-05T08:13:19.560Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="CRUX" scheme="https://jack126.github.io/tags/CRUX/"/>
+    <category term="内核" scheme="https://jack126.github.io/tags/%E5%86%85%E6%A0%B8/"/>
+    <category term="编译" scheme="https://jack126.github.io/tags/%E7%BC%96%E8%AF%91/"/>
+    <id>https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/</id>
+    <link href="https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/"/>
+    <published>2026-07-31T04:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>CRUX Linux 3.8（默认内核 6.12.23）升级内核到 7.0.14，在 VMware 虚拟机环境遇到依赖安装、内核编译配置、G]]>
+    </summary>
+    <title>CRUX Linux 内核升级完整教程</title>
+    <updated>2026-08-05T08:13:19.556Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="天马行空" scheme="https://jack126.github.io/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/"/>
+    <category term="逍遥游" scheme="https://jack126.github.io/tags/%E9%80%8D%E9%81%A5%E6%B8%B8/"/>
+    <id>https://jack126.github.io/2026/06/17/2026-06-17-%E8%AF%B8%E5%A4%9A%E6%80%AA%E4%BA%8B/</id>
+    <link href="https://jack126.github.io/2026/06/17/2026-06-17-%E8%AF%B8%E5%A4%9A%E6%80%AA%E4%BA%8B/"/>
+    <published>2026-06-17T02:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>最近发现诸多怪人怪事</p>
+<ul>
+<li><p>上完幼儿园发现多动症、自闭症的孩子很多。记忆比较深的是，有个孩子带着去踏青，看到湖，直接往下跳，幸好拉住了。诸如此类挺多</p>
+</li>
+<li><p>上班路上经常见到一怪人，人长的挺有福气那种，穿一双凉鞋，黑色T杉]]>
+    </summary>
+    <title>诸多怪事</title>
+    <updated>2026-08-05T08:13:19.551Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="天马行空" scheme="https://jack126.github.io/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/"/>
+    <category term="逍遥游" scheme="https://jack126.github.io/tags/%E9%80%8D%E9%81%A5%E6%B8%B8/"/>
+    <id>https://jack126.github.io/2026/04/14/2026-04-14-%E5%B2%81%E6%9C%88%E5%A6%82%E6%A2%AD/</id>
+    <link href="https://jack126.github.io/2026/04/14/2026-04-14-%E5%B2%81%E6%9C%88%E5%A6%82%E6%A2%AD/"/>
+    <published>2026-04-14T07:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>作为一个80末尾的80后，过了年，发现，快四十了。好像还一事无成的样子。</p>
+<p>想起过年那会，老母亲说。给你们买了俩袄，等我改改，以后就做不了了。等你们以后穿。泪崩。。。</p>]]>
+    </summary>
+    <title>岁月如梭</title>
+    <updated>2026-08-05T08:13:19.546Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="天马行空" scheme="https://jack126.github.io/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/"/>
+    <category term="AI" scheme="https://jack126.github.io/tags/AI/"/>
+    <id>https://jack126.github.io/2026/02/11/2026-02-11-%E5%85%B3%E4%BA%8EAI%E7%9A%84%E4%B8%80%E4%BA%9B%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</id>
+    <link href="https://jack126.github.io/2026/02/11/2026-02-11-%E5%85%B3%E4%BA%8EAI%E7%9A%84%E4%B8%80%E4%BA%9B%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/"/>
+    <published>2026-02-11T07:44:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="关于AI的一些思考"><a href="#关于AI的一些思考" class="headerlink" title="关于AI的一些思考"></a>关于AI的一些思考</h3><ul>
+<li><p>最近一直在关注AI工具的发展，比如Cursor、TRAE、Dify]]>
+    </summary>
+    <title>关于AI的一些胡思乱想</title>
+    <updated>2026-08-05T08:13:19.541Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="软件" scheme="https://jack126.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://jack126.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="工具" scheme="https://jack126.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    <id>https://jack126.github.io/2026/02/09/2026-02-09-%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</id>
+    <link href="https://jack126.github.io/2026/02/09/2026-02-09-%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    <published>2026-02-09T01:33:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="常用软件工具"><a href="#常用软件工具" class="headerlink" title="常用软件工具"></a>常用软件工具</h3><table>
+<thead>
+<tr>
+<th>软件名称</th>
+<th>软件描述</th>
+</tr>
+</]]>
+    </summary>
+    <title>常用软件工具</title>
+    <updated>2026-08-05T08:13:19.537Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="生病" scheme="https://jack126.github.io/categories/%E7%94%9F%E7%97%85/"/>
+    <category term="骨折" scheme="https://jack126.github.io/tags/%E9%AA%A8%E6%8A%98/"/>
+    <id>https://jack126.github.io/2025/09/22/2025-09-22-%E9%AA%A8%E6%8A%98%E5%95%A6/</id>
+    <link href="https://jack126.github.io/2025/09/22/2025-09-22-%E9%AA%A8%E6%8A%98%E5%95%A6/"/>
+    <published>2025-09-22T00:53:00.000Z</published>
+    <summary>
+      <![CDATA[<h4 id="记一下骨折经历，都是泪。"><a href="#记一下骨折经历，都是泪。" class="headerlink" title="记一下骨折经历，都是泪。"></a>记一下骨折经历，都是泪。</h4><p>2025.6.17 日，跟往常一样的早上，上班路上，骑着我心]]>
+    </summary>
+    <title>骨折啦</title>
+    <updated>2026-08-05T08:13:19.533Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="果子哥" scheme="https://jack126.github.io/categories/%E6%9E%9C%E5%AD%90%E5%93%A5/"/>
+    <category term="果子哥" scheme="https://jack126.github.io/tags/%E6%9E%9C%E5%AD%90%E5%93%A5/"/>
+    <id>https://jack126.github.io/2025/05/23/2025-05-23-%E6%9E%9C%E5%AD%90%E5%93%A5%E6%97%A5%E5%B8%B8/</id>
+    <link href="https://jack126.github.io/2025/05/23/2025-05-23-%E6%9E%9C%E5%AD%90%E5%93%A5%E6%97%A5%E5%B8%B8/"/>
+    <published>2025-05-23T06:23:00.000Z</published>
+    <title>果子哥日常</title>
+    <updated>2026-08-05T08:13:19.528Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="Language" scheme="https://jack126.github.io/categories/Language/"/>
+    <category term="mac" scheme="https://jack126.github.io/tags/mac/"/>
+    <category term="diskutil" scheme="https://jack126.github.io/tags/diskutil/"/>
+    <id>https://jack126.github.io/2025/01/18/2025-01-18-diskutil%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <link href="https://jack126.github.io/2025/01/18/2025-01-18-diskutil%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <published>2025-01-18T12:53:00.000Z</published>
+    <summary>
+      <![CDATA[<p>diskutil list  列出所有disk</p>
+<p>diskutil unmountDisk &#x2F;dev&#x2F;disk2  unmountDisk disk2</p>
+<p>diskutil eraseDisk ExFat ovo disk2 格式化]]>
+    </summary>
+    <title>diskutil常用命令</title>
+    <updated>2026-08-05T08:13:19.524Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="天马行空" scheme="https://jack126.github.io/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/"/>
+    <category term="obsidian" scheme="https://jack126.github.io/tags/obsidian/"/>
+    <category term="termux" scheme="https://jack126.github.io/tags/termux/"/>
+    <category term="git" scheme="https://jack126.github.io/tags/git/"/>
+    <id>https://jack126.github.io/2024/11/08/2024-11-08-%E6%89%93%E9%80%9Aobsidian%E5%90%84%E7%AB%AF/</id>
+    <link href="https://jack126.github.io/2024/11/08/2024-11-08-%E6%89%93%E9%80%9Aobsidian%E5%90%84%E7%AB%AF/"/>
+    <published>2024-11-08T07:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>最近使用obsidian编辑笔记，遇到同步问题，公司，手机三台设备。</p>
+<ul>
+<li>用过obsidian第三方插件remotely-save+坚果云 webdav，大概几天时间，mac就无法登陆坚果云app。需求客服无果，遂放弃。</li>
+<li>还有个one]]>
+    </summary>
+    <title>打通obsidian各端</title>
+    <updated>2026-08-05T08:13:19.521Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="数据库" scheme="https://jack126.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="MySQL" scheme="https://jack126.github.io/tags/MySQL/"/>
+    <id>https://jack126.github.io/2024/11/07/2024-11-07-MySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</id>
+    <link href="https://jack126.github.io/2024/11/07/2024-11-07-MySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    <published>2024-11-07T01:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="最近本地修改mysql端口号遇到一个问题，记录一下。"><a href="#最近本地修改mysql端口号遇到一个问题，记录一下。" class="headerlink" title="最近本地修改mysql端口号遇到一个问题，记录一下。"></a>最近本地修改my]]>
+    </summary>
+    <title>MySQL常见问题汇总</title>
+    <updated>2026-08-05T08:13:19.516Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="天马行空" scheme="https://jack126.github.io/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/"/>
+    <category term="macports" scheme="https://jack126.github.io/tags/macports/"/>
+    <id>https://jack126.github.io/2024/11/07/2024-11-07-Macports%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
+    <link href="https://jack126.github.io/2024/11/07/2024-11-07-Macports%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
+    <published>2024-11-07T01:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="修改安装源"><a href="#修改安装源" class="headerlink" title="修改安装源"></a>修改安装源</h3><p>macports更新卡住是因为使用了国外的源问题，使用VPN即可。<br>无VPN可以修改安装源地址，再更新即可。<]]>
+    </summary>
+    <title>Macports常用操作</title>
+    <updated>2026-08-05T08:13:19.512Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="天马行空" scheme="https://jack126.github.io/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/"/>
+    <category term="逍遥游" scheme="https://jack126.github.io/tags/%E9%80%8D%E9%81%A5%E6%B8%B8/"/>
+    <id>https://jack126.github.io/2024/08/19/2024-08-19-%E9%80%8D%E9%81%A5%E6%B8%B8/</id>
+    <link href="https://jack126.github.io/2024/08/19/2024-08-19-%E9%80%8D%E9%81%A5%E6%B8%B8/"/>
+    <published>2024-08-19T00:00:00.000Z</published>
+    <summary>
+      <![CDATA[<pre><code>北冥有鱼，其名为鲲。鲲之大，不知其几千里也；化而为鸟，其名为鹏。鹏之背，不知其几千里也；怒而飞，其翼若垂天之云。是鸟也，海运则将徙于南冥。南冥者，天池也。《齐谐》者，志怪者也。《谐》之言曰：“鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里，去以六月息者也。”]]>
+    </summary>
+    <title>逍遥游</title>
+    <updated>2026-08-05T08:13:19.508Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="天马行空" scheme="https://jack126.github.io/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/"/>
+    <category term="道德经" scheme="https://jack126.github.io/tags/%E9%81%93%E5%BE%B7%E7%BB%8F/"/>
+    <id>https://jack126.github.io/2024/08/14/2024-08-14-%E9%81%93%E5%BE%B7%E7%BB%8F(%E9%A9%AC%E7%8E%8B%E5%A0%86)/</id>
+    <link href="https://jack126.github.io/2024/08/14/2024-08-14-%E9%81%93%E5%BE%B7%E7%BB%8F(%E9%A9%AC%E7%8E%8B%E5%A0%86)/"/>
+    <published>2024-08-14T04:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>《道德经》马王堆出土帛书版 全文<br>1973年，在湖南长沙马王堆汉墓出土了帛书版《老子五千言》甲乙两本，轰动了世界，让世人对传世本《道德经》又有了重新的认识。原来帛书版的《老子五千言》从内容上看有许多地方与传世本不同，甚至是背道而驰大相径庭。不禁让人怀疑是为了服务于儒家]]>
+    </summary>
+    <title>《道德经》马王堆出土帛书版</title>
+    <updated>2026-08-05T08:13:19.504Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="编辑器" scheme="https://jack126.github.io/categories/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <category term="vim" scheme="https://jack126.github.io/tags/vim/"/>
+    <id>https://jack126.github.io/2024/07/15/2024-07-15-Vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+    <link href="https://jack126.github.io/2024/07/15/2024-07-15-Vim%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <published>2024-07-15T13:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>vim很常用，一直想总结常用快捷键，突然发现该贴，发现很全面，遂转之.</p>
+<h2 id="1-关于Vim"><a href="#1-关于Vim" class="headerlink" title="1. 关于Vim"></a>1. 关于Vim</h2><p>vim是我]]>
+    </summary>
+    <title>Vim 快捷键</title>
+    <updated>2026-08-05T08:13:19.497Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="编辑器" scheme="https://jack126.github.io/categories/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <category term="emacs" scheme="https://jack126.github.io/tags/emacs/"/>
+    <id>https://jack126.github.io/2024/07/15/2024-07-15-Emacs%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <link href="https://jack126.github.io/2024/07/15/2024-07-15-Emacs%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <published>2024-07-15T08:42:00.000Z</published>
+    <summary>
+      <![CDATA[<ul>
+<li><strong>C</strong> 是 <strong>Control</strong>, <strong>Ctrl</strong>.</li>
+<li><strong>M</strong> 是 <strong>Meta</strong>, 可以是 <str]]>
+    </summary>
+    <title>Emacs 学习笔记</title>
+    <updated>2026-08-05T08:13:19.489Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="ab" scheme="https://jack126.github.io/tags/ab/"/>
+    <id>https://jack126.github.io/2024/07/11/2024-07-11-linux%E4%B8%8Bab%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</id>
+    <link href="https://jack126.github.io/2024/07/11/2024-07-11-linux%E4%B8%8Bab%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/"/>
+    <published>2024-07-11T04:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="最近做压力测试比较多，常用jmeter，ab等工具，记录下遇到问题及解决方式"><a href="#最近做压力测试比较多，常用jmeter，ab等工具，记录下遇到问题及解决方式" class="headerlink" title="最近做压力测试比较多，常用jme]]>
+    </summary>
+    <title>linux下ab测试常见错误</title>
+    <updated>2026-08-05T08:13:19.487Z</updated>
+  </entry>
+</feed>
