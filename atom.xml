@@ -102,9 +102,9 @@
     </author>
     <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
     <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="dwm" scheme="https://jack126.github.io/tags/dwm/"/>
     <category term="CRUX" scheme="https://jack126.github.io/tags/CRUX/"/>
     <category term="Xorg" scheme="https://jack126.github.io/tags/Xorg/"/>
-    <category term="dwm" scheme="https://jack126.github.io/tags/dwm/"/>
     <category term="vxwm" scheme="https://jack126.github.io/tags/vxwm/"/>
     <id>https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Xorg-dwm-%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%8E%92%E9%9A%9C/</id>
     <link href="https://jack126.github.io/2026/07/31/2026-07-31-CRUX-Xorg-dwm-%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%8E%92%E9%9A%9C/"/>
@@ -350,16 +350,16 @@
     <author>
       <name>Jack</name>
     </author>
-    <category term="编辑器" scheme="https://jack126.github.io/categories/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    <category term="alacritty" scheme="https://jack126.github.io/tags/alacritty/"/>
-    <category term="fish" scheme="https://jack126.github.io/tags/fish/"/>
-    <id>https://jack126.github.io/2024/07/11/2024-07-11-%E4%B8%AA%E4%BA%BA%E7%94%A8%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/</id>
-    <link href="https://jack126.github.io/2024/07/11/2024-07-11-%E4%B8%AA%E4%BA%BA%E7%94%A8%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/"/>
+    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="ab" scheme="https://jack126.github.io/tags/ab/"/>
+    <id>https://jack126.github.io/2024/07/11/2024-07-11-linux%E4%B8%8Bab%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</id>
+    <link href="https://jack126.github.io/2024/07/11/2024-07-11-linux%E4%B8%8Bab%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/"/>
     <published>2024-07-11T04:00:00.000Z</published>
     <summary>
-      <![CDATA[<h3 id="贴一下个人目前在用终端环境"><a href="#贴一下个人目前在用终端环境" class="headerlink" title="贴一下个人目前在用终端环境"></a>贴一下个人目前在用终端环境</h3><h5 id="alacritty-fish-emacs-]]>
+      <![CDATA[<h3 id="最近做压力测试比较多，常用jmeter，ab等工具，记录下遇到问题及解决方式"><a href="#最近做压力测试比较多，常用jmeter，ab等工具，记录下遇到问题及解决方式" class="headerlink" title="最近做压力测试比较多，常用jme]]>
     </summary>
-    <title>个人用终端配置</title>
-    <updated>2026-08-05T08:13:19.489Z</updated>
+    <title>linux下ab测试常见错误</title>
+    <updated>2026-08-05T08:13:19.487Z</updated>
   </entry>
 </feed>
