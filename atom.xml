@@ -10,7 +10,24 @@
   <rights>All rights reserved 2026, Jack</rights>
   <subtitle>活着就是一场修行。</subtitle>
   <title>东临碣石</title>
-  <updated>2026-08-06T00:56:27.603Z</updated>
+  <updated>2026-08-27T05:48:21.924Z</updated>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
+    <category term="tmux" scheme="https://jack126.github.io/tags/tmux/"/>
+    <category term="st" scheme="https://jack126.github.io/tags/st/"/>
+    <id>https://jack126.github.io/2026/08/27/2026-08-27-tmux%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://jack126.github.io/2026/08/27/2026-08-27-tmux%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/"/>
+    <published>2026-08-27T05:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="为什么用-tmux"><a href="#为什么用-tmux" class="headerlink" title="为什么用 tmux"></a>为什么用 tmux</h3><p>极简窗口管理器（dwm&#x2F;i3）+ st&#x2F;zt 极简终端只追求轻量]]>
+    </summary>
+    <title>tmux 常用配置</title>
+    <updated>2026-08-27T05:48:21.924Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Jack</name>
@@ -345,21 +362,5 @@
     </summary>
     <title>Emacs 学习笔记</title>
     <updated>2026-08-05T08:13:19.489Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Jack</name>
-    </author>
-    <category term="Linux" scheme="https://jack126.github.io/categories/Linux/"/>
-    <category term="Linux" scheme="https://jack126.github.io/tags/Linux/"/>
-    <category term="ab" scheme="https://jack126.github.io/tags/ab/"/>
-    <id>https://jack126.github.io/2024/07/11/2024-07-11-linux%E4%B8%8Bab%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</id>
-    <link href="https://jack126.github.io/2024/07/11/2024-07-11-linux%E4%B8%8Bab%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/"/>
-    <published>2024-07-11T04:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h3 id="最近做压力测试比较多，常用jmeter，ab等工具，记录下遇到问题及解决方式"><a href="#最近做压力测试比较多，常用jmeter，ab等工具，记录下遇到问题及解决方式" class="headerlink" title="最近做压力测试比较多，常用jme]]>
-    </summary>
-    <title>linux下ab测试常见错误</title>
-    <updated>2026-08-05T08:13:19.487Z</updated>
   </entry>
 </feed>
