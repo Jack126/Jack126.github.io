@@ -10,7 +10,24 @@
   <rights>All rights reserved 2026, Jack</rights>
   <subtitle>活着就是一场修行。</subtitle>
   <title>东临碣石</title>
-  <updated>2026-08-27T05:48:21.924Z</updated>
+  <updated>2026-11-18T02:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>Jack</name>
+    </author>
+    <category term="软件" scheme="https://jack126.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="密码管理器" scheme="https://jack126.github.io/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/"/>
+    <category term="Rust" scheme="https://jack126.github.io/tags/Rust/"/>
+    <category term="Vue" scheme="https://jack126.github.io/tags/Vue/"/>
+    <category term="Tauri" scheme="https://jack126.github.io/tags/Tauri/"/>
+    <category term="安全" scheme="https://jack126.github.io/tags/%E5%AE%89%E5%85%A8/"/>
+    <id>https://jack126.github.io/2026/11/18/2026-11-19-hellopass-manger/</id>
+    <link href="https://jack126.github.io/2026/11/18/2026-11-19-hellopass-manger/"/>
+    <published>2026-11-18T02:00:00.000Z</published>
+    <summary>介绍 Hellopass，一个基于 Vue 3 + Rust + Tauri 2 的安全跨平台密码管理器。</summary>
+    <title>Hellopass - 跨平台密码管理器</title>
+    <updated>2026-11-18T02:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Jack</name>
@@ -26,7 +43,7 @@
       <![CDATA[<h3 id="为什么用-tmux"><a href="#为什么用-tmux" class="headerlink" title="为什么用 tmux"></a>为什么用 tmux</h3><p>极简窗口管理器（dwm&#x2F;i3）+ st&#x2F;zt 极简终端只追求轻量]]>
     </summary>
     <title>tmux 常用配置</title>
-    <updated>2026-08-27T05:48:21.924Z</updated>
+    <updated>2026-11-19T02:52:00.287Z</updated>
   </entry>
   <entry>
     <author>
@@ -49,7 +66,7 @@
 </tr]]>
     </summary>
     <title>i3 配置</title>
-    <updated>2026-08-06T00:56:27.603Z</updated>
+    <updated>2026-11-19T02:52:00.283Z</updated>
   </entry>
   <entry>
     <author>
@@ -71,7 +88,7 @@
 </tr]]>
     </summary>
     <title>JWM 配置</title>
-    <updated>2026-08-06T00:56:28.590Z</updated>
+    <updated>2026-11-19T02:52:00.274Z</updated>
   </entry>
   <entry>
     <author>
@@ -93,7 +110,7 @@
 <th>本地源码</th]]>
     </summary>
     <title>dwm 配置与美化</title>
-    <updated>2026-08-05T08:13:19.568Z</updated>
+    <updated>2026-11-19T02:52:00.278Z</updated>
   </entry>
   <entry>
     <author>
@@ -111,7 +128,7 @@
       <![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>CRUX Linux 3.8（默认内核 6.12.23）升级内核到 7.0.14，在 VMware 虚拟机环境遇到依赖安装、内核编译配置、G]]>
     </summary>
     <title>CRUX Linux 内核升级完整教程</title>
-    <updated>2026-08-05T08:13:19.556Z</updated>
+    <updated>2026-11-19T02:52:00.267Z</updated>
   </entry>
   <entry>
     <author>
@@ -130,7 +147,7 @@
       <![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>CRUX Linux 3.8 虚拟机环境，从零编译 Xorg → 搭建 dwm&#x2F;dmenu。完整实战记录，含 vxwm 尝试失败结]]>
     </summary>
     <title>CRUX Xorg dwm 部署与排障</title>
-    <updated>2026-08-05T08:13:19.560Z</updated>
+    <updated>2026-11-19T02:52:00.271Z</updated>
   </entry>
   <entry>
     <author>
@@ -149,7 +166,7 @@
 <li><p>上班路上经常见到一怪人，人长的挺有福气那种，穿一双凉鞋，黑色T杉]]>
     </summary>
     <title>诸多怪事</title>
-    <updated>2026-08-05T08:13:19.551Z</updated>
+    <updated>2026-11-19T02:52:00.262Z</updated>
   </entry>
   <entry>
     <author>
@@ -165,7 +182,7 @@
 <p>想起过年那会，老母亲说。给你们买了俩袄，等我改改，以后就做不了了。等你们以后穿。泪崩。。。</p>]]>
     </summary>
     <title>岁月如梭</title>
-    <updated>2026-08-05T08:13:19.546Z</updated>
+    <updated>2026-11-19T02:52:00.258Z</updated>
   </entry>
   <entry>
     <author>
@@ -181,7 +198,7 @@
 <li><p>最近一直在关注AI工具的发展，比如Cursor、TRAE、Dify]]>
     </summary>
     <title>关于AI的一些胡思乱想</title>
-    <updated>2026-08-05T08:13:19.541Z</updated>
+    <updated>2026-11-19T02:52:00.254Z</updated>
   </entry>
   <entry>
     <author>
@@ -203,7 +220,7 @@
 </]]>
     </summary>
     <title>常用软件工具</title>
-    <updated>2026-08-05T08:13:19.537Z</updated>
+    <updated>2026-11-19T02:52:00.250Z</updated>
   </entry>
   <entry>
     <author>
@@ -218,7 +235,7 @@
       <![CDATA[<h4 id="记一下骨折经历，都是泪。"><a href="#记一下骨折经历，都是泪。" class="headerlink" title="记一下骨折经历，都是泪。"></a>记一下骨折经历，都是泪。</h4><p>2025.6.17 日，跟往常一样的早上，上班路上，骑着我心]]>
     </summary>
     <title>骨折啦</title>
-    <updated>2026-08-05T08:13:19.533Z</updated>
+    <updated>2026-11-19T02:52:00.246Z</updated>
   </entry>
   <entry>
     <author>
@@ -230,7 +247,7 @@
     <link href="https://jack126.github.io/2025/05/23/2025-05-23-%E6%9E%9C%E5%AD%90%E5%93%A5%E6%97%A5%E5%B8%B8/"/>
     <published>2025-05-23T06:23:00.000Z</published>
     <title>果子哥日常</title>
-    <updated>2026-08-05T08:13:19.528Z</updated>
+    <updated>2026-11-19T02:52:00.242Z</updated>
   </entry>
   <entry>
     <author>
@@ -248,7 +265,7 @@
 <p>diskutil eraseDisk ExFat ovo disk2 格式化]]>
     </summary>
     <title>diskutil常用命令</title>
-    <updated>2026-08-05T08:13:19.524Z</updated>
+    <updated>2026-11-19T02:52:00.238Z</updated>
   </entry>
   <entry>
     <author>
@@ -268,7 +285,7 @@
 <li>还有个one]]>
     </summary>
     <title>打通obsidian各端</title>
-    <updated>2026-08-05T08:13:19.521Z</updated>
+    <updated>2026-11-19T02:52:00.234Z</updated>
   </entry>
   <entry>
     <author>
@@ -283,7 +300,7 @@
       <![CDATA[<h3 id="修改安装源"><a href="#修改安装源" class="headerlink" title="修改安装源"></a>修改安装源</h3><p>macports更新卡住是因为使用了国外的源问题，使用VPN即可。<br>无VPN可以修改安装源地址，再更新即可。<]]>
     </summary>
     <title>Macports常用操作</title>
-    <updated>2026-08-05T08:13:19.512Z</updated>
+    <updated>2026-11-19T02:52:00.226Z</updated>
   </entry>
   <entry>
     <author>
@@ -298,7 +315,7 @@
       <![CDATA[<h3 id="最近本地修改mysql端口号遇到一个问题，记录一下。"><a href="#最近本地修改mysql端口号遇到一个问题，记录一下。" class="headerlink" title="最近本地修改mysql端口号遇到一个问题，记录一下。"></a>最近本地修改my]]>
     </summary>
     <title>MySQL常见问题汇总</title>
-    <updated>2026-08-05T08:13:19.516Z</updated>
+    <updated>2026-11-19T02:52:00.230Z</updated>
   </entry>
   <entry>
     <author>
@@ -313,7 +330,7 @@
       <![CDATA[<pre><code>北冥有鱼，其名为鲲。鲲之大，不知其几千里也；化而为鸟，其名为鹏。鹏之背，不知其几千里也；怒而飞，其翼若垂天之云。是鸟也，海运则将徙于南冥。南冥者，天池也。《齐谐》者，志怪者也。《谐》之言曰：“鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里，去以六月息者也。”]]>
     </summary>
     <title>逍遥游</title>
-    <updated>2026-08-05T08:13:19.508Z</updated>
+    <updated>2026-11-19T02:52:00.222Z</updated>
   </entry>
   <entry>
     <author>
@@ -328,7 +345,7 @@
       <![CDATA[<p>《道德经》马王堆出土帛书版 全文<br>1973年，在湖南长沙马王堆汉墓出土了帛书版《老子五千言》甲乙两本，轰动了世界，让世人对传世本《道德经》又有了重新的认识。原来帛书版的《老子五千言》从内容上看有许多地方与传世本不同，甚至是背道而驰大相径庭。不禁让人怀疑是为了服务于儒家]]>
     </summary>
     <title>《道德经》马王堆出土帛书版</title>
-    <updated>2026-08-05T08:13:19.504Z</updated>
+    <updated>2026-11-19T02:52:00.218Z</updated>
   </entry>
   <entry>
     <author>
@@ -344,23 +361,6 @@
 <h2 id="1-关于Vim"><a href="#1-关于Vim" class="headerlink" title="1. 关于Vim"></a>1. 关于Vim</h2><p>vim是我]]>
     </summary>
     <title>Vim 快捷键</title>
-    <updated>2026-08-05T08:13:19.497Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Jack</name>
-    </author>
-    <category term="编辑器" scheme="https://jack126.github.io/categories/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    <category term="emacs" scheme="https://jack126.github.io/tags/emacs/"/>
-    <id>https://jack126.github.io/2024/07/15/2024-07-15-Emacs%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <link href="https://jack126.github.io/2024/07/15/2024-07-15-Emacs%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <published>2024-07-15T08:42:00.000Z</published>
-    <summary>
-      <![CDATA[<ul>
-<li><strong>C</strong> 是 <strong>Control</strong>, <strong>Ctrl</strong>.</li>
-<li><strong>M</strong> 是 <strong>Meta</strong>, 可以是 <str]]>
-    </summary>
-    <title>Emacs 学习笔记</title>
-    <updated>2026-08-05T08:13:19.489Z</updated>
+    <updated>2026-11-19T02:52:00.214Z</updated>
   </entry>
 </feed>
