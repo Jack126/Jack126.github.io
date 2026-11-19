@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>php批量导出excel问题</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="php批量导出excel问题" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="问题描述：现有需求导出数据表中数据，后台导出按钮点击超时" />
+<meta property="og:description" content="问题描述：现有需求导出数据表中数据，后台导出按钮点击超时" />
+<link rel="canonical" href="http://localhost:4000/language/2022/06/28/php%E6%89%B9%E9%87%8F%E5%AF%BC%E5%87%BAexcel%E9%97%AE%E9%A2%98.html" />
+<meta property="og:url" content="http://localhost:4000/language/2022/06/28/php%E6%89%B9%E9%87%8F%E5%AF%BC%E5%87%BAexcel%E9%97%AE%E9%A2%98.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-06-28T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="php批量导出excel问题" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-28T12:00:00+08:00","datePublished":"2022-06-28T12:00:00+08:00","description":"问题描述：现有需求导出数据表中数据，后台导出按钮点击超时","headline":"php批量导出excel问题","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/language/2022/06/28/php%E6%89%B9%E9%87%8F%E5%AF%BC%E5%87%BAexcel%E9%97%AE%E9%A2%98.html"},"url":"http://localhost:4000/language/2022/06/28/php%E6%89%B9%E9%87%8F%E5%AF%BC%E5%87%BAexcel%E9%97%AE%E9%A2%98.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2022-06-28 12:00:00 +0800">2022-06-28 12:00</time>
+    <span>309 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#PHP">PHP</a>
+    
+  </div>
+  </p>
+  <h1>php批量导出excel问题</h1>
+
+  <blockquote>
+  <p>问题描述：现有需求导出数据表中数据，后台导出按钮点击超时</p>
+</blockquote>
+
+<p><strong><em>解决方法：</em></strong></p>
+<ol>
+  <li>phpexcel导出，大概可导出6000左右数据，导出耗时较长</li>
+  <li>使用csv格式导出，fputcsv速度较快。据查可导出100w左右，具体速度未测算</li>
+  <li>csv结合 yield方式，较方式2可导出数据更多（推荐）</li>
+  <li>数据库直接导出生成csv （推荐）， 如：</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT
+*
+FROM
+    table_name 
+INTO OUTFILE './table_name.csv'
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n';  
+</code></pre></div></div>
+
+<p><strong><em>ps.</em></strong></p>
+<ol>
+  <li>1w左右数据，方式2，3区别不是很大，10w数据时方法2一般会爆内存错误</li>
+</ol>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>SqlSession was not registered for synchronization because synchronization is not active事务开启失败</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="SqlSession was not registered for synchronization because synchronization is not active事务开启失败" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="学习ssm初始阶段，遇到一个mybatis-config 打印logImpl 报错问题，如下： spring-sevice.xml 配置如下" />
+<meta property="og:description" content="学习ssm初始阶段，遇到一个mybatis-config 打印logImpl 报错问题，如下： spring-sevice.xml 配置如下" />
+<link rel="canonical" href="http://localhost:4000/language/2021/11/26/SqlSession-was-not-registered-for-synchronization-because-synchronizat.html" />
+<meta property="og:url" content="http://localhost:4000/language/2021/11/26/SqlSession-was-not-registered-for-synchronization-because-synchronizat.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-26T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SqlSession was not registered for synchronization because synchronization is not active事务开启失败" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-11-26T12:00:00+08:00","datePublished":"2021-11-26T12:00:00+08:00","description":"学习ssm初始阶段，遇到一个mybatis-config 打印logImpl 报错问题，如下： spring-sevice.xml 配置如下","headline":"SqlSession was not registered for synchronization because synchronization is not active事务开启失败","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/language/2021/11/26/SqlSession-was-not-registered-for-synchronization-because-synchronizat.html"},"url":"http://localhost:4000/language/2021/11/26/SqlSession-was-not-registered-for-synchronization-because-synchronizat.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2021-11-26 12:00:00 +0800">2021-11-26 12:00</time>
+    <span>109 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#JAVA">JAVA</a>
+    
+  </div>
+  </p>
+  <h1>SqlSession was not registered for synchronization because synchronization is not active事务开启失败</h1>
+
+  <p>学习ssm初始阶段，遇到一个mybatis-config 打印logImpl 报错问题，如下：
+<img src="http://localhost:4000/pics/java/1.png" alt="图1" />
+spring-sevice.xml 配置如下
+<img src="http://localhost:4000/pics/java/2.png" alt="图2" /></p>
+
+<p>解决方法：
+在在service层里依赖注入进去@Transactional
+<img src="http://localhost:4000/pics/java/3.png" alt="图3" /></p>
+
+<p>最后运行如下：
+<img src="http://localhost:4000/pics/java/4.png" alt="图4" /></p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

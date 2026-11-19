@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>个人用vim配置</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="个人用vim配置" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="用了一段时间neovim，发现还是emacs好用。慢慢的去掉了插件，直到最后卸了neovim，改回vim。" />
+<meta property="og:description" content="用了一段时间neovim，发现还是emacs好用。慢慢的去掉了插件，直到最后卸了neovim，改回vim。" />
+<link rel="canonical" href="http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2023/07/27/%E4%B8%AA%E4%BA%BA%E7%94%A8vim%E9%85%8D%E7%BD%AE.html" />
+<meta property="og:url" content="http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2023/07/27/%E4%B8%AA%E4%BA%BA%E7%94%A8vim%E9%85%8D%E7%BD%AE.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-07-27T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="个人用vim配置" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-07-27T12:00:00+08:00","datePublished":"2023-07-27T12:00:00+08:00","description":"用了一段时间neovim，发现还是emacs好用。慢慢的去掉了插件，直到最后卸了neovim，改回vim。","headline":"个人用vim配置","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2023/07/27/%E4%B8%AA%E4%BA%BA%E7%94%A8vim%E9%85%8D%E7%BD%AE.html"},"url":"http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2023/07/27/%E4%B8%AA%E4%BA%BA%E7%94%A8vim%E9%85%8D%E7%BD%AE.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2023-07-27 12:00:00 +0800">2023-07-27 12:00</time>
+    <span>1086 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#vim">vim</a>
+    
+  </div>
+  </p>
+  <h1>个人用vim配置</h1>
+
+  <p>用了一段时间neovim，发现还是emacs好用。慢慢的去掉了插件，直到最后卸了neovim，改回vim。</p>
+
+<p>下面是个人用mac下的vimrc配置文件</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set number "显示行号
+set nocompatible
+syntax enable "开启语法高亮
+set ruler
+set background=dark
+
+set showtabline=0 "隐藏顶部标签栏
+set guioptions-=r "隐藏右侧滚动条
+set guioptions-=L  "隐藏左侧滚动条
+set guioptions-=b "隐藏底部滚动条
+set cursorline "突出显示当前行
+set nowrap "设置代码不折行
+set fileformat=unix "设置以unix的格式保存文件
+set cindent "设置C样式的缩进格式
+set tabstop=4 "一个 tab 显示出来是多少个空格 默认 8
+set softtabstop=4
+set shiftwidth=4 "每一级缩进是多少个空格
+set backspace=eol,start,indent "可以对其重置
+set showmatch "显示匹配的括号
+set scrolloff=5 "距离顶部和底部5行
+set laststatus=2 "命令行为两行
+set mouse=a "启用鼠标
+set selection=exclusive
+set selectmode=mouse,key
+set matchtime=1 " 匹配括号高亮的时间（单位是十分之一秒）
+set ignorecase "忽略大小写
+set incsearch "搜索逐字符高亮
+set hlsearch "高亮搜索项
+set noexpandtab "不允许扩展table
+set whichwrap+=&lt;,&gt;,[,],h,l " 允许backspace和光标键跨越行边界
+set autoread " 设置当文件被改动时自动载入
+set modelines=0 " CVE-2007-2438
+set statusline=\ %&lt;%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&amp;fileformat}\ %{&amp;encoding}\ Ln\ %l,\ Col\ %c/%L%) "设置在状态行显示的信息
+set noeb  " 去掉输入错误的提示声音 
+set completeopt=preview,menu " 代码补全
+set noswapfile " 禁止生成临时文件
+set nobackup " 不需要备份
+
+set enc=utf-8
+set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+colorscheme desert "设置配色方案
+</code></pre></div></div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

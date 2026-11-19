@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Linux find指令过滤掉没有查看权限的文件</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Linux find指令过滤掉没有查看权限的文件" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="如题，find指令寻找某个文件时， 如果， find 路径 -name 文件名 通常会列出很多无权限查看文件， 事实上这些文件也不是我们要找的， 有时候占了很多篇幅影响视线。 find 路径 -name 文件名 2&gt;/dev/null 就能过滤掉， 也就是说，后面加了： 2&gt;/dev/null 记录用，如有侵，告之必删" />
+<meta property="og:description" content="如题，find指令寻找某个文件时， 如果， find 路径 -name 文件名 通常会列出很多无权限查看文件， 事实上这些文件也不是我们要找的， 有时候占了很多篇幅影响视线。 find 路径 -name 文件名 2&gt;/dev/null 就能过滤掉， 也就是说，后面加了： 2&gt;/dev/null 记录用，如有侵，告之必删" />
+<link rel="canonical" href="http://localhost:4000/linux/2022/09/01/Linux-find%E6%8C%87%E4%BB%A4%E8%BF%87%E6%BB%A4%E6%8E%89%E6%B2%A1%E6%9C%89%E6%9F%A5%E7%9C%8B%E6%9D%83%E9%99%90%E7%9A%84%E6%96%87%E4%BB%B6.html" />
+<meta property="og:url" content="http://localhost:4000/linux/2022/09/01/Linux-find%E6%8C%87%E4%BB%A4%E8%BF%87%E6%BB%A4%E6%8E%89%E6%B2%A1%E6%9C%89%E6%9F%A5%E7%9C%8B%E6%9D%83%E9%99%90%E7%9A%84%E6%96%87%E4%BB%B6.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-01T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Linux find指令过滤掉没有查看权限的文件" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-01T12:00:00+08:00","datePublished":"2022-09-01T12:00:00+08:00","description":"如题，find指令寻找某个文件时， 如果， find 路径 -name 文件名 通常会列出很多无权限查看文件， 事实上这些文件也不是我们要找的， 有时候占了很多篇幅影响视线。 find 路径 -name 文件名 2&gt;/dev/null 就能过滤掉， 也就是说，后面加了： 2&gt;/dev/null 记录用，如有侵，告之必删","headline":"Linux find指令过滤掉没有查看权限的文件","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/linux/2022/09/01/Linux-find%E6%8C%87%E4%BB%A4%E8%BF%87%E6%BB%A4%E6%8E%89%E6%B2%A1%E6%9C%89%E6%9F%A5%E7%9C%8B%E6%9D%83%E9%99%90%E7%9A%84%E6%96%87%E4%BB%B6.html"},"url":"http://localhost:4000/linux/2022/09/01/Linux-find%E6%8C%87%E4%BB%A4%E8%BF%87%E6%BB%A4%E6%8E%89%E6%B2%A1%E6%9C%89%E6%9F%A5%E7%9C%8B%E6%9D%83%E9%99%90%E7%9A%84%E6%96%87%E4%BB%B6.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2022-09-01 12:00:00 +0800">2022-09-01 12:00</time>
+    <span>149 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#Linux">Linux</a>
+    
+  </div>
+  </p>
+  <h1>Linux find指令过滤掉没有查看权限的文件</h1>
+
+  <p>如题，find指令寻找某个文件时，
+如果，
+find 路径 -name 文件名
+通常会列出很多无权限查看文件，
+事实上这些文件也不是我们要找的，
+有时候占了很多篇幅影响视线。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find 路径 -name 文件名 2&gt;/dev/null
+</code></pre></div></div>
+<p>就能过滤掉，
+也就是说，后面加了：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2&gt;/dev/null
+</code></pre></div></div>
+<p>记录用，如有侵，告之必删</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

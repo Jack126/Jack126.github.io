@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Macports常用操作</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Macports常用操作" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="修改安装源 macports更新卡住是因为使用了国外的源问题，使用VPN即可。 无VPN可以修改安装源地址，再更新即可。" />
+<meta property="og:description" content="修改安装源 macports更新卡住是因为使用了国外的源问题，使用VPN即可。 无VPN可以修改安装源地址，再更新即可。" />
+<link rel="canonical" href="http://localhost:4000/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/2024/11/07/Macports%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.html" />
+<meta property="og:url" content="http://localhost:4000/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/2024/11/07/Macports%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-11-07T09:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Macports常用操作" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-07T09:00:00+08:00","datePublished":"2024-11-07T09:00:00+08:00","description":"修改安装源 macports更新卡住是因为使用了国外的源问题，使用VPN即可。 无VPN可以修改安装源地址，再更新即可。","headline":"Macports常用操作","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/2024/11/07/Macports%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.html"},"url":"http://localhost:4000/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/2024/11/07/Macports%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2024-11-07 09:00:00 +0800">2024-11-07 09:00</time>
+    <span>857 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#macports">macports</a>
+    
+  </div>
+  </p>
+  <h1>Macports常用操作</h1>
+
+  <h3 id="修改安装源">修改安装源</h3>
+<p>macports更新卡住是因为使用了国外的源问题，使用VPN即可。<br />
+无VPN可以修改安装源地址，再更新即可。</p>
+
+<p>修改/opt/local/etc/macports/sources.conf，把最后的rsync注释掉换成其它镜像源。<br />
+China, Beijing</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[rsync://pek.cn.rsync.macports.org/macports/release/tarballs/ports.tar](https://links.jianshu.com/go?to=rsync%3A%2F%2Fpek.cn.rsync.macports.org%2Fmacports%2Frelease%2Ftarballs%2Fports.tar) [default]  
+</code></pre></div></div>
+<p>官方提供的源地址：<a href="https://links.jianshu.com/go?to=https%3A%2F%2Ftrac.macports.org%2Fwiki%2FMirrors">https://trac.macports.org/wiki/Mirrors</a></p>
+
+<h3 id="macports-常用命令">macports 常用命令</h3>
+<p>升级 mac port 自身</p>
+
+<h4 id="sudo-port-selfupdate">sudo port selfupdate</h4>
+<p>更新的是 port 自身，以及仓库文件索引。</p>
+
+<p>更新后，先不急着更新其他软件。先找出那些是不需要可以删除的软件或依赖。</p>
+
+<h4 id="port-installed-inactive">port installed inactive</h4>
+<p>列出所有「非激活」态的软件(包)，我将删除这些软件(包)。</p>
+
+<p>删除没有用到的软件(包)</p>
+
+<h4 id="sudo-port-uninstall-inactive">sudo port uninstall inactive</h4>
+<p>查看是否有不需要的依赖</p>
+
+<h4 id="port-echo-leaves">port echo leaves</h4>
+<p>leaves 这个词很形象，孤立的叶子节点，很好记。</p>
+
+<p>删除不需要的依赖</p>
+
+<h4 id="sudo-port-uninstall-leaves">sudo port uninstall leaves</h4>
+<p>一般需要删除多次，因为有些依赖是循环依赖于前一个不需要的依赖。<br />
+直到报错说没有匹配的结果为止。</p>
+
+<h4 id="sudo-port-uninstall-leaves-1">sudo port uninstall leaves</h4>
+<p>Error: No ports matched the given expression<br />
+这时再查找哪些软件(包)已经有新版本</p>
+
+<h4 id="port-outdated">port outdated</h4>
+<p>建议单独升级需要的软件(包)，比如A B C</p>
+
+<h4 id="sudo-port-upgrade-a-b-c">sudo port upgrade A B C…</h4>
+<p>或者直接升级所有旧软件(包)（不推荐）</p>
+
+<h4 id="sudo-port-upgrade-outdated">sudo port upgrade outdated</h4>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

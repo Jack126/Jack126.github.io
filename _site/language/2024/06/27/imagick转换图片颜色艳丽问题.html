@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>imagick转换图片颜色艳丽问题</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="imagick转换图片颜色艳丽问题" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="情况说明： 分清两个概念，cmyk，rgb。记住，这是本文章主要原因" />
+<meta property="og:description" content="情况说明： 分清两个概念，cmyk，rgb。记住，这是本文章主要原因" />
+<link rel="canonical" href="http://localhost:4000/language/2024/06/27/imagick%E8%BD%AC%E6%8D%A2%E5%9B%BE%E7%89%87%E9%A2%9C%E8%89%B2%E8%89%B3%E4%B8%BD%E9%97%AE%E9%A2%98.html" />
+<meta property="og:url" content="http://localhost:4000/language/2024/06/27/imagick%E8%BD%AC%E6%8D%A2%E5%9B%BE%E7%89%87%E9%A2%9C%E8%89%B2%E8%89%B3%E4%B8%BD%E9%97%AE%E9%A2%98.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-06-27T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="imagick转换图片颜色艳丽问题" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-06-27T12:00:00+08:00","datePublished":"2024-06-27T12:00:00+08:00","description":"情况说明： 分清两个概念，cmyk，rgb。记住，这是本文章主要原因","headline":"imagick转换图片颜色艳丽问题","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/language/2024/06/27/imagick%E8%BD%AC%E6%8D%A2%E5%9B%BE%E7%89%87%E9%A2%9C%E8%89%B2%E8%89%B3%E4%B8%BD%E9%97%AE%E9%A2%98.html"},"url":"http://localhost:4000/language/2024/06/27/imagick%E8%BD%AC%E6%8D%A2%E5%9B%BE%E7%89%87%E9%A2%9C%E8%89%B2%E8%89%B3%E4%B8%BD%E9%97%AE%E9%A2%98.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2024-06-27 12:00:00 +0800">2024-06-27 12:00</time>
+    <span>653 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#PHP">PHP</a>,
+    
+    <a href="/tags/#imagick">imagick</a>
+    
+  </div>
+  </p>
+  <h1>imagick转换图片颜色艳丽问题</h1>
+
+  <p>情况说明：
+分清两个概念，cmyk，rgb。记住，这是本文章主要原因</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+$pdfFile = './1.pdf'; // PDF文件路径
+try {
+    for ($i = 0; $i &lt; 17; $i++) {
+        $thumbnail = new \Imagick();
+         // 提前设置方式rgb读取文件
+        $thumbnail-&gt;SetColorspace(Imagick::COLORSPACE_RGB);
+        $thumbnail-&gt;setResolution(200, 200); // 设置分辨率
+        $thumbnail-&gt;setCompressionQuality(70); //设置质量
+        $thumbnail-&gt;readImage($pdfFile . '[' . $i . ']'); // 读取第几页
+        $thumbnail-&gt;setImageFormat('jpeg'); // 设置图片格式为JPEG
+        $file = "./imgs/" . $i . ".jpeg";
+        $thumbnail-&gt;writeImage($file);
+        var_dump($i . " is OK");
+        // 清理资源
+        $thumbnail-&gt;clear();
+        $thumbnail-&gt;destroy();
+    }
+} catch (Exception $e) {
+    echo 'Error: ', $e-&gt;getMessage();
+}
+
+</code></pre></div></div>
+
+<p>最后依旧存在问题，修改为生成png+色彩空间rgb模式，网页背景设置白色。。搞定，收工。唯一缺点是，下载后图片是灰色背景。。暂时这样吧。。费劲，遇到盲区了</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

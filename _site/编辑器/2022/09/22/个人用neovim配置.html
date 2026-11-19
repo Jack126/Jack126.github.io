@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>个人用neovim配置</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="个人用neovim配置" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="vim配置增强版，非插件化配置，非lua配置 配置文件地址 ~/.config/nvim/init.vim 个人配置gitee地址：neovim配置" />
+<meta property="og:description" content="vim配置增强版，非插件化配置，非lua配置 配置文件地址 ~/.config/nvim/init.vim 个人配置gitee地址：neovim配置" />
+<link rel="canonical" href="http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2022/09/22/%E4%B8%AA%E4%BA%BA%E7%94%A8neovim%E9%85%8D%E7%BD%AE.html" />
+<meta property="og:url" content="http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2022/09/22/%E4%B8%AA%E4%BA%BA%E7%94%A8neovim%E9%85%8D%E7%BD%AE.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-22T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="个人用neovim配置" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-22T12:00:00+08:00","datePublished":"2022-09-22T12:00:00+08:00","description":"vim配置增强版，非插件化配置，非lua配置 配置文件地址 ~/.config/nvim/init.vim 个人配置gitee地址：neovim配置","headline":"个人用neovim配置","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2022/09/22/%E4%B8%AA%E4%BA%BA%E7%94%A8neovim%E9%85%8D%E7%BD%AE.html"},"url":"http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2022/09/22/%E4%B8%AA%E4%BA%BA%E7%94%A8neovim%E9%85%8D%E7%BD%AE.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2022-09-22 12:00:00 +0800">2022-09-22 12:00</time>
+    <span>3004 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#neovim">neovim</a>
+    
+  </div>
+  </p>
+  <h1>个人用neovim配置</h1>
+
+  <p>vim配置增强版，非插件化配置，非lua配置
+配置文件地址</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.config/nvim/init.vim
+</code></pre></div></div>
+<p>个人配置gitee地址：<a href="https://gitee.com/yaoyue126/neovim">neovim配置</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>syntax on                      " 语法高亮
+filetype on
+filetype plugin on
+filetype plugin indent on      " 开启自动识别文件类型,并根据文件类型加载不同的插件和缩进规则
+set number                     " 显示行号
+set relativenumber             " 显示相对行号
+set autoindent
+set smartindent
+set softtabstop=4
+set shiftwidth=4               " 设置位移宽度为4
+set tabstop=4                  " 设置缩进宽度为4
+set expandtab                  " 将缩进替换为空格
+set nobackup                   " 不生成backup文件
+set scrolloff=10               " 设置滚动时始终显示上下10行
+set nowrap                     " 禁止折行
+set incsearch                  " 增量式搜索
+set ignorecase                 " 搜索时大小写不敏感
+set smartcase                  " 搜索时对首字母大小写敏感
+set showcmd                    " 显示键入的命令前缀
+set showmode                   " 显示当前模式(插入、可视等)
+set hlsearch                   " 高亮搜索结果
+set history=1000               " 设置命令历史记录为1000
+set wildmenu                   " 设置tab补全
+set wildmode=list:longest      " 使tab补全类似于Bash
+set encoding=utf-8             " 设置编码方式为UTF-8
+set showmatch                  " 当光标置于成对符号(例如括号)时,高亮匹配的符号对
+exec "nohlsearch"
+set mouse=a                    " 支持鼠标
+set foldmethod=indent          " 代码折叠
+set foldcolumn=0               " 设置代码区域的宽度
+setlocal foldlevel=1           " 设置折叠层数为
+set foldlevelstart=99          " 打开文件是默认不折叠代码
+set cursorline                 " 光标所在的当前行高亮
+set cursorcolumn               " 高亮当前列
+
+
+
+let g:mapleader = " "                   " leader 改为空格
+
+cmap w!! w !sudo tee &gt;/dev/null %       " w!!写入只读文件
+
+map tq :tabclose                        " 标签页操作  关闭标签页 tabe close
+map tmh :-tabmove                       " 移动标签页 tabe move h/j
+map tml :+tabmove
+
+noremap ta :tabe&lt;CR&gt;                    " ta 为新建标签页,th 和 tl 分别向左右跳转
+noremap th :-tabnext&lt;CR&gt;
+noremap tl :+tabnext&lt;CR&gt;
+
+let &amp;t_SI = "\]50;CursorShape=1\x7"     " 根据不同模式,改变光标样式
+let &amp;t_SR = "\]50;CursorShape=2\x7"
+let &amp;t_EI = "\]50;CursorShape=0\x7"
+
+noremap j gj
+noremap k gk
+noremap gj j
+noremap gk k
+noremap J 5gj
+noremap K 5gk
+
+noremap &lt;leader&gt;&lt;CR&gt; :nohlsearch&lt;CR&gt;    " 取消高亮映射 空格(&lt;leader&gt;)和回车(&lt;CR&gt;)
+
+noremap s &lt;nop&gt;                         " 分屏(split)
+noremap sl :set splitright&lt;CR&gt;:vsplit&lt;CR&gt;
+noremap sh :set nosplitright&lt;CR&gt;:vsplit&lt;CR&gt;
+noremap sj :set splitbelow&lt;CR&gt;:split&lt;CR&gt;
+noremap sk :set nosplitbelow&lt;CR&gt;:split&lt;CR&gt;
+
+noremap &lt;leader&gt;l &lt;c-w&gt;l                " 使用空格加方向键实现分屏之间的跳转
+noremap &lt;leader&gt;h &lt;c-w&gt;h
+noremap &lt;leader&gt;j &lt;c-w&gt;j
+noremap &lt;leader&gt;k &lt;c-w&gt;k
+
+noremap &lt;leader&gt;L &lt;c-w&gt;L                " 使用空格加大写方向键将当前分屏放置到指定方向的最边缘
+noremap &lt;leader&gt;H &lt;c-w&gt;H
+noremap &lt;leader&gt;J &lt;c-w&gt;J
+noremap &lt;leader&gt;K &lt;c-w&gt;K
+
+noremap &lt;up&gt; :res +5&lt;CR&gt;                " 上下左右键调整当前分屏的高度和宽度
+noremap &lt;down&gt; :res -5&lt;CR&gt;
+noremap &lt;left&gt; :vertical res -5&lt;CR&gt;
+noremap &lt;right&gt; :vertical res +5&lt;CR&gt;
+
+noremap &lt;leader&gt;o o&lt;Esc&gt;k               " 空格加小写字母 o:向下插入空行
+noremap &lt;leader&gt;O O&lt;Esc&gt;j               " 空格加大写字母 O:向上插入空行
+noremap &lt;leader&gt;w :w&lt;CR&gt;                " 空格加小写字母 w:保存文档
+noremap &lt;leader&gt;q :q&lt;CR&gt;                " 空格加小写字母 q:退出 Neovim
+noremap Y "+y                           " 大写字母 Y:复制到系统剪切板
+
+noremap = nzz                           " 查找 zz 可以将当前行居中,继续查找设置为更常用(输入法常用)的 = 和 - 键:
+noremap - Nzz
+
+nnoremap R :source $MYVIMRC&lt;CR&gt;         " 普通模式下大写字母 R:刷新 Neovim 配置
+"0 和 $ 默认情况下分别表示实际行的行首和行尾
+nnoremap g0 0
+nnoremap 0 g0
+nnoremap $ g$
+nnoremap g$ $
+
+silent !mkdir -p ~/.config/nvim/tmp/backup   " 编辑 保留记录,退出后再次打开依然可以 undo
+silent !mkdir -p ~/.config/nvim/tmp/undo
+set backupdir=~/.config/nvim/tmp/backup,.
+set directory=~/.config/nvim/tmp/backup,.
+if has('persistent_undo')
+  set undofile
+  set undodir=~/.config/nvim/tmp/undo,.
+endif
+
+noremap &lt;leader&gt;e  :Explore&lt;CR&gt;              " 当前窗口下打开
+noremap &lt;leader&gt;ve :Vexplore&lt;CR&gt;             " 竖直分割窗口打开
+noremap &lt;leader&gt;se :Sexplore&lt;CR&gt;             " 水平分割窗口打开
+
+au BufReadPost * if line("'\"") &gt; 1 &amp;&amp; line("'\"") &lt;= line("$") | exe "normal! g'\"" | endif  " 恢复光标
+
+</code></pre></div></div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

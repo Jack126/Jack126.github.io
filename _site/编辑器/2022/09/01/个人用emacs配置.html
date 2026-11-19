@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>个人用emacs配置</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="个人用emacs配置" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="啥也不说，直接上链接" />
+<meta property="og:description" content="啥也不说，直接上链接" />
+<link rel="canonical" href="http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2022/09/01/%E4%B8%AA%E4%BA%BA%E7%94%A8emacs%E9%85%8D%E7%BD%AE.html" />
+<meta property="og:url" content="http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2022/09/01/%E4%B8%AA%E4%BA%BA%E7%94%A8emacs%E9%85%8D%E7%BD%AE.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-01T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="个人用emacs配置" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-01T12:00:00+08:00","datePublished":"2022-09-01T12:00:00+08:00","description":"啥也不说，直接上链接","headline":"个人用emacs配置","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2022/09/01/%E4%B8%AA%E4%BA%BA%E7%94%A8emacs%E9%85%8D%E7%BD%AE.html"},"url":"http://localhost:4000/%E7%BC%96%E8%BE%91%E5%99%A8/2022/09/01/%E4%B8%AA%E4%BA%BA%E7%94%A8emacs%E9%85%8D%E7%BD%AE.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2022-09-01 12:00:00 +0800">2022-09-01 12:00</time>
+    <span>1660 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#emacs">emacs</a>
+    
+  </div>
+  </p>
+  <h1>个人用emacs配置</h1>
+
+  <p>啥也不说，直接上链接</p>
+
+<p><a href="https://github.com/Jack126/emacs.d">emacs配置</a></p>
+
+<p>bashrc添加配置</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> alias e='emacsclient -t'
+ alias ek="emacsclient -e '(save-buffers-kill-emacs)'"
+ alias emacs='emacs -nw'
+</code></pre></div></div>
+<ul>
+  <li>e打开</li>
+  <li>ek关闭</li>
+  <li>emacs 打开配置</li>
+</ul>
+
+<h1 id="about">About</h1>
+
+<p>forked <a href="https://github.com/cabins/emacs.d">cabins</a> , 很喜欢作者一句 “酸枣，是产于中国华东地区的一种山枣，个头小，味道酸甜，营养丰富”。 感谢大佬</p>
+
+<h1 id="ps">PS</h1>
+
+<p>目前 emacs 新手一枚，摸索大佬配置中前进，望诸君共勉!</p>
+
+<ul>
+  <li>目前 emacs 版本 28.1 ，系统版本 mac 10.15.7 下正常使用，其他版本下未测</li>
+  <li>目前支持终端下使用，gui 模式亦可（该模式下文字大小需调整 lisp/common/init-fn.el 51 行 height）</li>
+  <li>需安装字体 Nerd Font(brew 太慢可以直接去字体库下载后安装)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    brew cask
+
+    brew tap homebrew/cask-fonts
+
+    brew install font-fira-code
+
+    brew install font-Fira-Code-nerd-font
+
+    brew install font-hack-nerd-font
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>建议使用 iterm2（终端色彩下能好看一点） <a href="https://www.iterm2.com/downloads.html">iterm2</a>(alacritty + fish 也不错)</p>
+  </li>
+  <li>
+    <p>使用<a href="https://github.com/manateelazycat/auto-save">auto-save</a> 自动保存（C-x C-s)可以少按几次了。。</p>
+  </li>
+  <li>
+    <p><del>使用 eglot 需搭配其他开发环境使用，需另搭建（请自行查阅）</del></p>
+  </li>
+  <li>
+    <p>需安装 ctags（brew install ctags ) , ctags -R -e 可在当前项目下生成 TAGS ，搭配快捷键 M-. , M-, 跳转方法，回跳 （ &gt; , &lt; 去，回。简单不)</p>
+  </li>
+  <li>
+    <p>推荐使用 <strong><em>emacs28.2分支</em></strong> ，该版本为目前稳定版本，弃用eglot，改用<a href="https://github.com/manateelazycat/lsp-bridge">lsp-bridge</a>目前使用良好，支持语言足矣。</p>
+  </li>
+</ul>
+
+<h1 id="快捷键">快捷键</h1>
+
+<h2 id="neotree-窗口有效">NeoTree (窗口有效)</h2>
+
+<ol>
+  <li>n 下一行 ， p 上一行。</li>
+  <li>SPC or RET or TAB 若是文件，在其他 buffer 打开；若是目录，可切换折叠、收起。</li>
+  <li>g 刷新树。</li>
+  <li>A 最大/最小化 NeoTree 窗口</li>
+  <li>H 切换显示隐藏文件。</li>
+  <li>C-c C-n 创建文件，若以 / 结尾则表示创建文件夹。</li>
+  <li>C-c C-d 删除文件或目录。</li>
+  <li>C-c C-r 重命名文件或目录。</li>
+  <li>C-c C-c 改变根目录。</li>
+</ol>
+
+<h1 id="常用快捷键">常用快捷键</h1>
+
+<ol>
+  <li>C-c f 格式化代码</li>
+  <li>C-x p f 项目中文件查找</li>
+  <li>C-x p g 项目中关键字查找(可配合关键词TODO，DEBUG简单使用todo功能)</li>
+  <li>C-x p p 项目切换</li>
+  <li>C-c d 拷贝当前行 （搭配 M-y 粘贴 使用，贼好用）</li>
+  <li>C-c r 查看最近打开文件</li>
+  <li>C-x b 切换 buffer</li>
+  <li>C-k 删除当前行</li>
+  <li>C-c z 查看当前文件绝对路径</li>
+  <li>C-c C-j imenu（查看当前文件菜单？）</li>
+  <li>C-x k 关掉当前 buffer</li>
+  <li>C-x u 撤销</li>
+  <li>C-h k 查看按键是否绑定（快捷键冲突检测用）</li>
+  <li>C-s , C-r 查找（前后），查找下一个 继续查找按 C-s 或 C-r</li>
+  <li>F8 neotree 显示隐藏 (可屏蔽neotree，使用speedbar)</li>
+  <li>多行注释：
+    <ol>
+      <li>选中一段区域到最后一行行首（！很重要！）；</li>
+      <li>按 C-x r t ；</li>
+      <li>输入注释内容；</li>
+    </ol>
+  </li>
+  <li>反多行注释：
+    <ol>
+      <li>选中一段区域到最后一行，紧挨着注释字符之后的位置（！很重要！）；</li>
+      <li>按 c-x r k；</li>
+    </ol>
+  </li>
+  <li>C-M ; 行尾添加注释</li>
+  <li>M-; 添加行注释</li>
+  <li>M-. 查找方法定义</li>
+  <li>M-, 跳回</li>
+  <li>M-q 查找替换</li>
+  <li>M-o 窗口切换(M-数字，跳窗口)</li>
+  <li>M-g g 跳行</li>
+  <li>C-S SPC mark-set (C-SPC 替代品, S - Shift)</li>
+  <li>C-l 重新绘制屏幕画面，当前行放在画面中心处</li>
+  <li>C-x C-t 交换两行的位置(下交换上)</li>
+  <li>M-u 使从光标位置到单词结尾处的字母变成大写</li>
+  <li>M-l 与M-u 相反使从光标位置到单词结尾处的字母变成小写</li>
+  <li>M-c 使从光标位置开始的单词的首字母变为大写 (M-l)</li>
+  <li>f5 php-mode和web-mode之间快速切换</li>
+  <li>f12 calendar 打开日历 ,q 退出(init-calendar 详细说明)</li>
+  <li>f9 list bookmarks</li>
+  <li>home beginning-of-buffer</li>
+  <li>end end-of-buffer</li>
+  <li>C-c y 单词翻译</li>
+  <li>C-c t 展示 todo list</li>
+  <li>C-c w 显示天气</li>
+  <li>C-c o 当前行下插入一行</li>
+  <li>C-a 回到行首 (C-e 行尾)</li>
+</ol>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

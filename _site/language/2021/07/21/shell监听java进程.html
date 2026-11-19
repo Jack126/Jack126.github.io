@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>shell 监听java 进程</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="shell 监听java 进程" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="shell 监听Java应用服务进程是否正常运行，并重启" />
+<meta property="og:description" content="shell 监听Java应用服务进程是否正常运行，并重启" />
+<link rel="canonical" href="http://localhost:4000/language/2021/07/21/shell%E7%9B%91%E5%90%ACjava%E8%BF%9B%E7%A8%8B.html" />
+<meta property="og:url" content="http://localhost:4000/language/2021/07/21/shell%E7%9B%91%E5%90%ACjava%E8%BF%9B%E7%A8%8B.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-07-21T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="shell 监听java 进程" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-07-21T12:00:00+08:00","datePublished":"2021-07-21T12:00:00+08:00","description":"shell 监听Java应用服务进程是否正常运行，并重启","headline":"shell 监听java 进程","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/language/2021/07/21/shell%E7%9B%91%E5%90%ACjava%E8%BF%9B%E7%A8%8B.html"},"url":"http://localhost:4000/language/2021/07/21/shell%E7%9B%91%E5%90%ACjava%E8%BF%9B%E7%A8%8B.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2021-07-21 12:00:00 +0800">2021-07-21 12:00</time>
+    <span>1005 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#shell">shell</a>
+    
+  </div>
+  </p>
+  <h1>shell 监听java 进程</h1>
+
+  <p>shell 监听Java应用服务进程是否正常运行，并重启</p>
+
+<h4 id="编写脚本">编写脚本</h4>
+
+<p>vim /opt/listen/listen_pushdemo.sh</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/sh
+# 必须配置，引入环境变量；不然使用crond 定时执行脚本无法启动Java应用
+source /etc/profile
+#当前时间
+now=`date +"%Y-%m-%d %H:%M:%S"`
+file_name="/opt/listen/logs/pushdemo.log"  #重启脚本的日志，保证可写入，保险一点执行 chmod 777 data.log
+pid=0
+proc_num() 
+{
+    num=`ps -ef | grep 'java -jar push-0.0.1-SNAPSHOT.jar' | grep -v grep | wc -l`  #此处'java -jar push-0.0.1-SNAPSHOT.jar'替代为实际的，尽量准确，避免误kill
+    return $num 
+}
+proc_id()
+{  
+    pid=`ps -ef | grep 'java -jar push-0.0.1-SNAPSHOT.jar' | grep -v grep | awk '{print $2}'`  #此处'java -jar push-0.0.1-SNAPSHOT.jar'也替代为实际的
+} 
+proc_num  #执行proc_num()，获取进程数
+number=$?  #获取上一函数返回值
+if [ $number -eq 0 ]  #如果没有该进程，则重启
+then
+    cd /opt/demo/push-server
+    nohup java -jar push-0.0.1-SNAPSHOT.jar  &amp;  #启动程序的命令
+    proc_id 
+    echo "${now} 进程数 = ${number} 重启应用服务：push -&gt; pid = ${pid}" &gt;&gt; $file_name  #把重启的进程号、时间 写入日志
+#else
+     #echo "${now}  应用服务：push 正常 -&gt; ${number}" &gt;&gt; $file_name
+fi
+</code></pre></div></div>
+
+<h4 id="加入定时任务">加入定时任务</h4>
+
+<p>*/1 * * * * sh /opt/listen/listen_pushdemo.sh &gt;/dev/null 2&gt;&amp;1</p>
+
+<h4 id="查看crondserivce服务的自启动状态">查看crond.serivce服务的自启动状态</h4>
+
+<p>systemctl is-enabled crond.service</p>
+
+<h4 id="加入开机启动命令">加入开机启动命令</h4>
+
+<p>chkconfig –level 35 crond on</p>
+
+<p>或</p>
+
+<p>systemctl enable crond.service</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

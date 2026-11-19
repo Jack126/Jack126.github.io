@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>打通obsidian各端</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="打通obsidian各端" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="最近使用obsidian编辑笔记，遇到同步问题，公司，手机三台设备。" />
+<meta property="og:description" content="最近使用obsidian编辑笔记，遇到同步问题，公司，手机三台设备。" />
+<link rel="canonical" href="http://localhost:4000/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/2024/11/08/%E6%89%93%E9%80%9Aobsidian%E5%90%84%E7%AB%AF.html" />
+<meta property="og:url" content="http://localhost:4000/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/2024/11/08/%E6%89%93%E9%80%9Aobsidian%E5%90%84%E7%AB%AF.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-11-08T15:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="打通obsidian各端" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-08T15:00:00+08:00","datePublished":"2024-11-08T15:00:00+08:00","description":"最近使用obsidian编辑笔记，遇到同步问题，公司，手机三台设备。","headline":"打通obsidian各端","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/2024/11/08/%E6%89%93%E9%80%9Aobsidian%E5%90%84%E7%AB%AF.html"},"url":"http://localhost:4000/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/2024/11/08/%E6%89%93%E9%80%9Aobsidian%E5%90%84%E7%AB%AF.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2024-11-08 15:00:00 +0800">2024-11-08 15:00</time>
+    <span>557 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#obsidian">obsidian</a>,
+    
+    <a href="/tags/#termux">termux</a>,
+    
+    <a href="/tags/#git">git</a>
+    
+  </div>
+  </p>
+  <h1>打通obsidian各端</h1>
+
+  <p>最近使用obsidian编辑笔记，遇到同步问题，公司，手机三台设备。</p>
+
+<ul>
+  <li>用过obsidian第三方插件remotely-save+坚果云 webdav，大概几天时间，mac就无法登陆坚果云app。需求客服无果，遂放弃。</li>
+  <li>还有个onedrive，需额外fq，速度跟稳定是一回事。。放弃</li>
+  <li>本打算自己搭建webdav服务器，后发现还需额外整个云服务器，或者内网电脑穿透。好处是隐私性更强，缺点费电（Qiong。。。）放弃</li>
+  <li>最终选择gitee这个免费大杀器</li>
+</ul>
+
+<p>电脑端： obsidian+git</p>
+
+<p>安卓手机端：obsidian+termux(pkg install openssh, vim )</p>
+
+<ul>
+  <li>略微麻烦点就是，每次需要手动git pull，还能接受，谁让免费呢</li>
+</ul>
+
+<h3 id="termux">termux</h3>
+
+<ul>
+  <li>
+    <p>安装termux
+ <a href="https://github.com/termux/termux-app/releases/">github</a> 第一个 arm64-v8a 即可</p>
+  </li>
+  <li>
+    <p>安装插件</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># pkg install openssh 
+// (/data/data/com.termux/files/home/.ssh) 生成termux 公钥，复制粘贴到 git仓库公钥管理
+# ssh-keygen -t rsa 
+
+</code></pre></div></div>
+<h3 id="home-datadatacomtermuxfileshome">home /data/data/com.termux/files/home</h3>
+
+<ul>
+  <li>进入手机documents目录</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># termux-setup-storage
+# ls /sdcard/documents
+</code></pre></div></div>
+
+<ul>
+  <li>vi ~/.bashrc 编辑常用命令</li>
+</ul>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

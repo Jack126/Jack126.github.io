@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>python-black 2 格式化代码</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="python-black 2 格式化代码" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="缘由： 目前使用emacs敲python代码，每次都需要手动使用black命令格式化 git status下的修改文件，遂改写一个black 命令 black2（站在巨人肩膀上，感谢psf)。废话不多说，上代码" />
+<meta property="og:description" content="缘由： 目前使用emacs敲python代码，每次都需要手动使用black命令格式化 git status下的修改文件，遂改写一个black 命令 black2（站在巨人肩膀上，感谢psf)。废话不多说，上代码" />
+<link rel="canonical" href="http://localhost:4000/language/2022/03/11/python-black-2-%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81.html" />
+<meta property="og:url" content="http://localhost:4000/language/2022/03/11/python-black-2-%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-11T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="python-black 2 格式化代码" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-03-11T12:00:00+08:00","datePublished":"2022-03-11T12:00:00+08:00","description":"缘由： 目前使用emacs敲python代码，每次都需要手动使用black命令格式化 git status下的修改文件，遂改写一个black 命令 black2（站在巨人肩膀上，感谢psf)。废话不多说，上代码","headline":"python-black 2 格式化代码","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/language/2022/03/11/python-black-2-%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81.html"},"url":"http://localhost:4000/language/2022/03/11/python-black-2-%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2022-03-11 12:00:00 +0800">2022-03-11 12:00</time>
+    <span>485 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#emacs">emacs</a>
+    
+  </div>
+  </p>
+  <h1>python-black 2 格式化代码</h1>
+
+  <h3 id="缘由">缘由：</h3>
+<p>目前使用emacs敲python代码，每次都需要手动使用black命令格式化 git status下的修改文件，遂改写一个black 命令 black2（站在巨人肩膀上，感谢psf)。废话不多说，上代码</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/local/opt/python@3.9/bin/python3.9
+# -*- coding: utf-8 -*-
+
+import os
+from time import sleep
+
+cmd = "git status | grep 'modified'"
+a = os.popen(cmd).read()
+b = a.replace("modified:", "").splitlines()
+for i in b:
+    os.popen("black " + i.lstrip())
+    sleep(1)
+</code></pre></div></div>
+
+<p>代码原理很简单，把git status中筛出来的文件做一次black  格式化。这样一个black2 命令即可执行多个文件的批量格式化（再次感谢psf）
+把该文件放在 计算机变量中（mac 可放在 /usr/local/bin/black2 跟black 同级），chmod +x 加执行权限即可</p>
+
+<h3 id="ps">PS</h3>
+<p>需提前 pip install black （此为肩膀）</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

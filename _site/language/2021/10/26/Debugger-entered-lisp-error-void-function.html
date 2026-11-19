@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Debugger entered--lisp error void-function</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Debugger entered–lisp error void-function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="最近在学习使用emacs，尝试了很多配置，最终选定redguardtoo 大神配置，很齐全，很强大。 众所周知，学习emacs，不学elisp不合适，遂学习之。" />
+<meta property="og:description" content="最近在学习使用emacs，尝试了很多配置，最终选定redguardtoo 大神配置，很齐全，很强大。 众所周知，学习emacs，不学elisp不合适，遂学习之。" />
+<link rel="canonical" href="http://localhost:4000/language/2021/10/26/Debugger-entered-lisp-error-void-function.html" />
+<meta property="og:url" content="http://localhost:4000/language/2021/10/26/Debugger-entered-lisp-error-void-function.html" />
+<meta property="og:site_name" content="北冥有鱼" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-10-26T12:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Debugger entered–lisp error void-function" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-10-26T12:00:00+08:00","datePublished":"2021-10-26T12:00:00+08:00","description":"最近在学习使用emacs，尝试了很多配置，最终选定redguardtoo 大神配置，很齐全，很强大。 众所周知，学习emacs，不学elisp不合适，遂学习之。","headline":"Debugger entered–lisp error void-function","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/language/2021/10/26/Debugger-entered-lisp-error-void-function.html"},"url":"http://localhost:4000/language/2021/10/26/Debugger-entered-lisp-error-void-function.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="北冥有鱼" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><<<</a><article>
+  <p class="post-meta">
+    <time datetime="2021-10-26 12:00:00 +0800">2021-10-26 12:00</time>
+    <span>290 字</span>
+    <div class="post_tags">
+    Tags: 
+    
+    
+    <a href="/tags/#emacs">emacs</a>
+    
+  </div>
+  </p>
+  <h1>Debugger entered--lisp error void-function</h1>
+
+  <p>最近在学习使用emacs，尝试了很多配置，最终选定redguardtoo 大神配置，很齐全，很强大。
+众所周知，学习emacs，不学elisp不合适，遂学习之。</p>
+
+<p>奈何 hello world上遇到了问题。</p>
+
+<p>问题如下：
+声明了个hello函数，执行时候报错 entered–lisp error void-function hello，各种百度，bing，谷歌，无果。。。最后发现是个小问题，记录之
+<img src="http://localhost:4000/pics/emacs/1.jpg" alt="bug" /></p>
+
+<p>问题原因，hello方法需 <strong>先执行一次，再调用</strong> ！！！
+如上所示，需要在第八行右侧括号处，C-x C-e执行，minibuffer中会出现hello标志，此时到第九行hello右侧括号处执行 C-x C-e 会正确执行。</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
